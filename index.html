@@ -3,297 +3,420 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0e332d">
+<meta name="theme-color" content="#0c2e27">
 <meta name="description" content="Trang thông tin tuyên truyền của Phòng Quản lý xuất nhập cảnh, Công an tỉnh Cà Mau: giấy tờ xuất nhập cảnh, thủ tục hành chính về hộ chiếu, giấy thông hành đối với công dân Việt Nam; điều kiện xuất cảnh, tạm hoãn xuất cảnh; toàn bộ hành vi vi phạm và mức xử phạt theo Nghị định 282/2025/NĐ-CP, hình phạt bổ sung, trách nhiệm hình sự theo Bộ luật Hình sự. Liên hệ 0290 383 1877.">
 <title>Xuất nhập cảnh của công dân Việt Nam | Phòng Quản lý xuất nhập cảnh — Công an tỉnh Cà Mau</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#153b35;--green:#144b40;--deep:#0e332d;--green2:#1c6151;
-  --gold:#c99a3d;--gold-2:#d6ac58;--gold-soft:#e7c37a;--gold-pale:#f2e6cc;
-  --cream:#f6f4ee;--paper:#fffdf7;--white:#fff;--muted:#5d6c68;
-  --line:#dfe6df;--line-2:#e2dccb;--red:#b33d3a;--red-soft:#fdf0ef;--red-line:#efcfcc;
-  --navy:#274b63;--radius:18px;--radius-sm:12px;--nav-h:88px;--dock-h:72px;
-  --shadow:0 10px 30px rgba(14,51,45,.10);--shadow-sm:0 4px 14px rgba(14,51,45,.07);
+  --paper:#fbf9f3;
+  --surface:#ffffff;
+  --surface-sunken:#f2efe6;
+  --ink:#17201d;
+  --ink-muted:#5a6b64;
+  --rule:#dcd8ca;
+  --rule-strong:#bdb5a0;
+  --green-900:#0c2e27;
+  --green-700:#144b40;
+  --green-500:#1f6e5c;
+  --gold-500:#c9a23d;
+  --gold-300:#e7c37a;
+  --gold-100:#f4e7c6;
+  --level-0:#5c6b63;
+  --level-1:#2f6f8f;
+  --level-2:#8d6315;
+  --level-3:#a44c1c;
+  --level-4:#a8322a;
+  --level-5:#6e1f2a;
+  --doc-pho-thong:#2f3474;
+  --doc-cong-vu:#14452c;
+  --doc-ngoai-giao:#6e2b26;
+  --doc-thong-hanh:#2f6b9a;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-12:48px;
+  --space-16:64px;
+  --space-24:96px;
+  --radius-xs:2px;
+  --radius-sm:4px;
+  --radius-md:6px;
+  --radius-stamp:999px;
+  --shadow-sticky:0 1px 0 0 #dcd8ca, 0 6px 16px -10px rgba(12,46,39,0.35);
+  --shadow-lift:0 10px 24px -14px rgba(12,46,39,0.45);
+  --font-display:"Lora", Georgia, "Times New Roman", serif;
+  --font-sans:"Be Vietnam Pro", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-mono:"IBM Plex Mono","Be Vietnam Pro",ui-monospace,SFMono-Regular,Menlo,monospace
 }
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#121715;
+  --surface:#1a211e;
+  --surface-sunken:#0e1412;
+  --ink:#f0ece3;
+  --ink-muted:#a3b0a9;
+  --rule:#2c3733;
+  --rule-strong:#3e4b46;
+  --green-900:#071c18;
+  --green-700:#1e6c5b;
+  --green-500:#2f8a74;
+  --gold-500:#d9b45a;
+  --gold-300:#edd3a0;
+  --gold-100:#3a3020;
+  --level-0:#93a29a;
+  --level-1:#6aa6c4;
+  --level-2:#d4a344;
+  --level-3:#e08552;
+  --level-4:#e0695e;
+  --level-5:#d9818c;
+  --shadow-sticky:0 1px 0 0 #2c3733, 0 6px 16px -10px rgba(0,0,0,0.6);
+  --shadow-lift:0 10px 24px -14px rgba(0,0,0,0.7)
+}}
+:root[data-theme="dark"]{
+  --paper:#121715;
+  --surface:#1a211e;
+  --surface-sunken:#0e1412;
+  --ink:#f0ece3;
+  --ink-muted:#a3b0a9;
+  --rule:#2c3733;
+  --rule-strong:#3e4b46;
+  --green-900:#071c18;
+  --green-700:#1e6c5b;
+  --green-500:#2f8a74;
+  --gold-500:#d9b45a;
+  --gold-300:#edd3a0;
+  --gold-100:#3a3020;
+  --level-0:#93a29a;
+  --level-1:#6aa6c4;
+  --level-2:#d4a344;
+  --level-3:#e08552;
+  --level-4:#e0695e;
+  --level-5:#d9818c;
+  --shadow-sticky:0 1px 0 0 #2c3733, 0 6px 16px -10px rgba(0,0,0,0.6);
+  --shadow-lift:0 10px 24px -14px rgba(0,0,0,0.7)
+}
+.display-xl{font-family:var(--font-display);font-size:52px;line-height:1.08;font-weight:600}
+.display-l{font-family:var(--font-display);font-size:36px;line-height:1.16;font-weight:600}
+.display-m{font-family:var(--font-display);font-size:26px;line-height:1.24;font-weight:600}
+.body-l{font-family:var(--font-sans);font-size:17px;line-height:1.7;font-weight:400}
+.body{font-family:var(--font-sans);font-size:15.5px;line-height:1.68;font-weight:400}
+.body-s{font-family:var(--font-sans);font-size:13.5px;line-height:1.55;font-weight:400}
+.label{font-family:var(--font-sans);font-size:12.5px;line-height:1.4;font-weight:600}
+.data{font-family:var(--font-mono);font-size:13px;line-height:1.45;font-weight:500}
+.data-s{font-family:var(--font-mono);font-size:11.5px;line-height:1.4;font-weight:500}
+.amount{font-family:var(--font-mono);font-size:15px;line-height:1.3;font-weight:600}
+/* ===================== NỀN TẢNG ===================== */
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 62px)}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;font-family:"Be Vietnam Pro","Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);font-size:16px;line-height:1.65;padding-bottom:var(--dock-h);-webkit-font-smoothing:antialiased;font-synthesis:none}
-a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:2px}
+body{margin:0;font-family:var(--font-sans);font-size:15.5px;line-height:1.68;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;padding-bottom:var(--dock-h,72px)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;margin:0}
+a{color:var(--green-700);text-underline-offset:2px}
 img{max-width:100%}
-h1,h2,h3{letter-spacing:-.02em}
-.wrap{width:min(1200px,calc(100% - 44px));margin:0 auto}
-.skip{position:absolute;left:-999px;top:0;background:var(--deep);color:#fff;padding:12px 18px;z-index:400;border-radius:0 0 10px 0;font-weight:700}
+.wrap{width:min(1180px,calc(100% - 44px));margin:0 auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--green-900);color:#fff;padding:12px 18px;z-index:400;font-weight:600}
 .skip:focus{left:0}
 svg.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
 svg.ic.sm{width:17px;height:17px;vertical-align:-3px}
+.mono{font-family:var(--font-mono)}
+:focus-visible{outline:2px solid var(--gold-500);outline-offset:2px}
+.hidden{display:none!important}
+mark{background:var(--gold-100);color:inherit;padding:0 2px}
 
-/* ============ EMBLEM & DRUM (SVG) ============ */
-.emblem{width:54px;height:54px;flex:0 0 auto;object-fit:contain;filter:drop-shadow(0 2px 5px rgba(14,51,45,.22))}
-.drum-motif{position:absolute;pointer-events:none;user-select:none;object-fit:contain;height:auto}
-.hero .drum-motif{right:-110px;top:-80px;width:580px;opacity:.20;animation:drum-in 1.4s ease-out both}
-.contact-hero .drum-motif{right:-90px;bottom:-120px;width:360px;opacity:.16}
-.footer .drum-motif{left:50%;top:-70px;transform:translateX(-50%);width:260px;opacity:.10}
-@keyframes drum-in{from{opacity:0;transform:rotate(-14deg) scale(.92)}to{opacity:.20;transform:none}}
-@media (prefers-reduced-motion:reduce){.hero .drum-motif{animation:none}}
-
-/* ============ HEADER ============ */
-.site-header{position:sticky;top:0;z-index:120;background:#fff;border-top:3px solid var(--green);border-bottom:2px solid var(--gold-2);box-shadow:0 3px 12px rgba(14,51,45,.06);transition:transform .25s ease}
+/* ===================== HEADER ===================== */
+.site-header{position:sticky;top:0;z-index:120;background:var(--surface);border-bottom:1px solid var(--rule-strong);box-shadow:var(--shadow-sticky);transition:transform .25s ease}
 .site-header.is-tucked{transform:translateY(-100%)}
-.header-inner{display:flex;align-items:center;gap:22px;min-height:var(--nav-h);padding:12px 0}
+.header-inner{display:flex;align-items:center;gap:20px;min-height:76px;padding:10px 0}
 .agency-brand{display:flex;gap:13px;align-items:center;flex:1 1 auto;min-width:0;text-decoration:none;color:inherit}
+.emblem{width:50px;height:50px;flex:0 0 auto;object-fit:contain}
 .brand-text{min-width:0}
-.authority-top{font-size:11px;line-height:1.5;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#6b8577}
-.authority-main{font-size:17.5px;font-weight:700;line-height:1.28;margin-top:2px;color:var(--ink)}
-.authority-sub{font-size:12.5px;color:var(--muted);margin-top:2px;display:none}
-.desktop-nav{margin-left:auto;display:none;gap:15px;white-space:nowrap;flex:0 0 auto}
-.desktop-nav a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;padding:10px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
-.desktop-nav a:hover,.desktop-nav a[aria-current="true"]{color:#8a6320;border-color:var(--gold-2)}
-.header-call{display:none;align-items:center;gap:8px;color:#fff;background:var(--green);font-size:13.5px;font-weight:700;min-height:44px;border-radius:999px;padding:9px 16px;white-space:nowrap;text-decoration:none;box-shadow:var(--shadow-sm);transition:background .15s,transform .15s;flex:0 0 auto}
-.header-call:hover{background:var(--green2);transform:translateY(-1px)}
-.menu-toggle{margin-left:auto;display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:10px;color:var(--green);cursor:pointer}
-@media(min-width:1160px){.desktop-nav{display:flex}.header-call{display:inline-flex;margin-left:18px}.menu-toggle{display:none}.authority-sub{display:block}}
-.mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.authority-top{font-size:11.5px;font-weight:500;letter-spacing:.04em;color:var(--ink-muted);display:block}
+.authority-main{font-family:var(--font-display);font-size:19px;font-weight:600;line-height:1.25;margin-top:1px;color:var(--ink);display:block}
+.authority-sub{font-size:12.5px;color:var(--ink-muted);margin-top:2px;display:none}
+.desktop-nav{margin-left:auto;display:none;gap:18px;white-space:nowrap;flex:0 0 auto}
+.desktop-nav a{color:var(--ink);text-decoration:none;font-size:13.5px;font-weight:500;padding:8px 0;border-bottom:2px solid transparent}
+.desktop-nav a:hover,.desktop-nav a[aria-current="true"]{color:var(--green-700);border-color:var(--gold-500)}
+.header-call{display:none;align-items:center;gap:8px;color:#fff;background:var(--green-700);font-size:14px;font-weight:600;min-height:42px;border-radius:var(--radius-stamp);padding:8px 18px;white-space:nowrap;text-decoration:none;flex:0 0 auto}
+.header-call:hover{background:var(--green-500)}
+.header-call .num{font-family:var(--font-mono);letter-spacing:.01em}
+.menu-toggle{margin-left:auto;display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--rule-strong);background:var(--surface);border-radius:var(--radius-sm);color:var(--green-700);cursor:pointer}
+@media(min-width:1160px){.desktop-nav{display:flex}.header-call{display:inline-flex;margin-left:16px}.menu-toggle{display:none}.authority-sub{display:block}}
+.mobile-nav{display:none;background:var(--surface);border-bottom:1px solid var(--rule)}
 .mobile-nav[aria-hidden="false"]{display:block}
-.mobile-nav .wrap{display:flex;flex-direction:column;padding:8px 0 12px}
-.mobile-nav a{padding:12px 6px;text-decoration:none;color:var(--ink);font-weight:600;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.mobile-nav .wrap{display:flex;flex-direction:column;padding:4px 0 10px}
+.mobile-nav a{padding:12px 4px;text-decoration:none;color:var(--ink);font-weight:500;border-bottom:1px solid var(--rule);display:flex;gap:10px;align-items:center}
 .mobile-nav a:last-child{border-bottom:none}
 @media(min-width:1160px){.mobile-nav{display:none!important}}
 
-/* ============ HERO ============ */
-.hero{background:linear-gradient(155deg,var(--deep),var(--green) 58%,#1c5f50);color:#fff;position:relative;overflow:hidden}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:34px;align-items:center;padding:46px 0 10px}
-@media(min-width:960px){.hero-inner{grid-template-columns:1.1fr .9fr;gap:52px;padding:58px 0 14px}}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);border:1px solid rgba(231,195,122,.4);color:var(--gold-soft);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
-.hero h1{font-size:clamp(32px,4.6vw,50px);line-height:1.14;font-weight:700;margin:20px 0 0;max-width:620px}
-.hero h1 .accent{display:block;color:var(--gold-soft);margin-top:6px}
-.hero-intro{color:#dbe8e1;font-size:16.5px;max-width:560px;margin:20px 0 0;line-height:1.72}
-.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.btn{display:inline-flex;gap:9px;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:1.5px solid transparent;border-radius:999px;font-size:14.5px;font-weight:700;text-decoration:none;cursor:pointer;line-height:1.3;transition:background .18s,transform .18s,border-color .18s}
-.btn:hover{transform:translateY(-1px)}
-.btn-gold{color:var(--deep);background:var(--gold-soft)}
-.btn-gold:hover{background:#f0d099}
-.btn-green{color:#fff;background:var(--green)}
-.btn-green:hover{background:var(--green2)}
-.btn-ghost{color:#fff;border-color:rgba(255,255,255,.45);background:transparent}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-.btn-line{background:#fff;color:var(--green);border-color:var(--line)}
-.btn-line:hover{background:#edf3ed}
-/* hero emblem panel */
-.emblem-panel{position:relative;z-index:2;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:26px;text-align:center;backdrop-filter:blur(4px)}
+/* ===================== HERO ===================== */
+.hero{background:var(--green-900);color:#fff;position:relative;overflow:hidden}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:34px;align-items:center;padding:56px 0 8px}
+@media(min-width:980px){.hero-inner{grid-template-columns:1.18fr .82fr;gap:56px;padding:72px 0 12px}}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--gold-300);border-left:2px solid var(--gold-500);padding-left:12px;line-height:1.5}
+.hero h1{font-size:clamp(34px,5vw,52px);line-height:1.08;margin:22px 0 0;max-width:20ch;text-wrap:balance}
+.hero h1 .accent{display:block;color:var(--gold-300)}
+.hero-intro{color:#cfe0d6;font-size:16.5px;max-width:62ch;margin:22px 0 0;line-height:1.72}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{display:inline-flex;gap:9px;align-items:center;justify-content:center;min-height:46px;padding:11px 20px;border:1px solid transparent;border-radius:var(--radius-sm);font-family:inherit;font-size:14.5px;font-weight:600;text-decoration:none;cursor:pointer;line-height:1.3;transition:background .16s,border-color .16s}
+.btn-gold{color:var(--green-900);background:var(--gold-300);border-color:var(--gold-300)}
+.btn-gold:hover{background:var(--gold-100)}
+.btn-green{color:#fff;background:var(--green-700);border-color:var(--green-700)}
+.btn-green:hover{background:var(--green-500)}
+.btn-ghost{color:#fff;border-color:rgba(255,255,255,.34);background:transparent}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-line{background:var(--surface);color:var(--green-700);border-color:var(--rule-strong)}
+.btn-line:hover{background:var(--surface-sunken)}
+.emblem-panel{position:relative;z-index:2;border:1px solid rgba(231,195,122,.3);border-radius:var(--radius-md);padding:26px;text-align:center}
 .emblem-stage{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:14px}
-.emblem-stage img{object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.42))}
-.emblem-stage .badge-cand{width:112px;height:auto}
-.emblem-stage .badge-imm{width:92px;height:auto}
-.emblem-panel b{display:block;color:var(--gold-soft);font-size:15px;letter-spacing:.02em}
-.emblem-panel span{display:block;color:#cfe0d6;font-size:13px;margin-top:3px}
-.emblem-panel .panel-phone{display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:#fff;text-decoration:none;font-weight:700;background:rgba(201,154,61,.22);border:1px solid rgba(231,195,122,.5);padding:9px 16px;border-radius:999px;font-size:14px}
-/* stat strip */
-.stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:26px 0 36px}
-@media(min-width:760px){.stats{grid-template-columns:repeat(5,1fr)}}
-.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.17);border-radius:14px;padding:14px 16px}
-.stat b{display:block;font-size:clamp(20px,2.4vw,25px);color:var(--gold-soft);font-weight:800;line-height:1.1}
-.stat span{font-size:12.5px;color:#dbe8e1;display:block;margin-top:5px;line-height:1.45}
+.emblem-stage img{object-fit:contain;filter:var(--shadow-lift)}
+.emblem-stage .badge-cand{width:104px;height:auto}
+.emblem-stage .badge-imm{width:86px;height:auto}
+.emblem-panel b{display:block;font-family:var(--font-display);color:var(--gold-300);font-size:16px;font-weight:600}
+.emblem-panel span{display:block;color:#b9d0c3;font-size:13px;margin-top:4px}
+.emblem-panel .panel-phone{display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:#fff;text-decoration:none;font-weight:600;border:1px solid rgba(231,195,122,.45);padding:8px 16px;border-radius:var(--radius-stamp);font-size:14px}
+.emblem-panel .panel-phone .num{font-family:var(--font-mono)}
+/* dải số liệu — hàng ngang có kẻ, không phải thẻ */
+.stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(231,195,122,.26);margin-top:34px}
+@media(min-width:860px){.stats{grid-template-columns:repeat(5,1fr)}}
+.stat{padding:18px 20px 20px;border-bottom:1px solid rgba(231,195,122,.16);border-right:1px solid rgba(231,195,122,.16)}
+.stat b{display:block;font-family:var(--font-mono);font-size:clamp(21px,2.6vw,27px);color:var(--gold-300);font-weight:600;line-height:1}
+.stat span{font-size:12.5px;color:#b9d0c3;display:block;margin-top:7px;line-height:1.45}
+.drum-motif{position:absolute;pointer-events:none;user-select:none;object-fit:contain;height:auto}
+.hero .drum-motif{right:-130px;top:-90px;width:540px;opacity:.11}
+.contact-hero .drum-motif{right:-90px;bottom:-120px;width:350px;opacity:.14}
+.footer .drum-motif{left:50%;top:-70px;transform:translateX(-50%);width:250px;opacity:.09}
+.camau-wrap{position:relative;margin-top:4px;line-height:0;overflow:hidden}
+.camau-band{display:block;width:100%;height:auto;max-height:300px}
+@media(max-width:760px){.camau-band{width:188%;margin-left:-44%}}
+.camau-caption{position:absolute;right:26px;bottom:12px;font-size:12px;font-weight:500;color:#b9d4c7;text-shadow:0 1px 6px rgba(4,20,17,.85)}
+.camau-caption b{color:var(--gold-300);font-weight:600}
+@media(max-width:620px){.camau-caption{right:14px;bottom:8px;font-size:10.5px}}
 
-/* ============ SMART TOC ============ */
-.section-toc{position:fixed;left:0;right:0;top:0;z-index:95;background:rgba(255,253,248,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2);box-shadow:0 8px 18px rgba(14,51,45,.07);opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .2s,transform .2s,visibility .2s}
+/* ===================== MỤC LỤC BÁM TRANG ===================== */
+.section-toc{position:fixed;left:0;right:0;top:0;z-index:95;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule-strong);opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .2s,transform .2s,visibility .2s}
 .section-toc.is-visible{opacity:1;visibility:visible;transform:none;pointer-events:auto}
-.toc-progress{position:absolute;left:0;bottom:-1px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-2));width:0;transition:width .1s linear}
-.toc-inner{width:min(1200px,calc(100% - 44px));margin:auto;display:flex;align-items:center;gap:12px;height:54px}
-.toc-title{flex:none;display:inline-flex;align-items:center;gap:7px;padding-right:12px;border-right:1px solid #ddd6c3;color:#7b5a20;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-.toc-list{position:relative;flex:1;min-width:0;display:flex;gap:3px;margin:0;padding:0;list-style:none;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent)}
+.toc-progress{position:absolute;left:0;bottom:-1px;height:2px;background:var(--gold-500);width:0;transition:width .1s linear}
+.toc-inner{width:min(1180px,calc(100% - 44px));margin:auto;display:flex;align-items:center;gap:12px;height:50px}
+.toc-title{flex:none;display:inline-flex;align-items:center;gap:7px;padding-right:12px;border-right:1px solid var(--rule);color:var(--ink-muted);font-size:12px;font-weight:600}
+.toc-list{position:relative;flex:1;min-width:0;display:flex;gap:2px;margin:0;padding:0;list-style:none;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent)}
 .toc-list::-webkit-scrollbar{display:none}
 .toc-list li{flex:none}
-.toc-list a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:999px;color:#34493f;font-size:13px;font-weight:600;white-space:nowrap;text-decoration:none;transition:background .15s,color .15s}
-.toc-list a:hover{background:#eef2e8;color:var(--green)}
-.toc-no{font-size:11px;font-weight:800;color:#8a6320;font-variant-numeric:tabular-nums}
-.toc-list a[aria-current="true"]{background:var(--green);color:#fff}
-.toc-list a[aria-current="true"] .toc-no{color:var(--gold-soft)}
-@media(max-width:720px){.toc-title span{display:none}.toc-title{padding-right:8px}}
+.toc-list a{display:inline-flex;align-items:center;min-height:38px;padding:0 11px;border-radius:var(--radius-xs);color:var(--ink);font-size:13px;font-weight:500;white-space:nowrap;text-decoration:none}
+.toc-list a:hover{background:var(--surface-sunken)}
+.toc-no{display:none}
+.toc-list a[aria-current="true"]{background:var(--green-700);color:#fff}
 
-/* ============ READING TOOLS ============ */
-.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:18px 0 2px}
-.toolbar .grp{display:inline-flex;gap:2px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px}
-.toolbar button{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13.5px;cursor:pointer;color:var(--green);font-weight:600;font-family:inherit;display:inline-flex;align-items:center;gap:6px;transition:background .15s}
-.toolbar .grp button{border:none;padding:6px 12px}
-.toolbar button:hover{background:#eef3ec}
-.toolbar .note{font-size:12.5px;color:var(--muted);margin-left:auto}
+/* ===================== CÔNG CỤ ĐỌC ===================== */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule)}
+.toolbar .grp{display:inline-flex;gap:0;border:1px solid var(--rule-strong);border-radius:var(--radius-sm);overflow:hidden}
+.toolbar button{background:var(--surface);border:1px solid var(--rule-strong);border-radius:var(--radius-sm);padding:7px 13px;font-size:13.5px;cursor:pointer;color:var(--green-700);font-weight:500;font-family:inherit;display:inline-flex;align-items:center;gap:6px}
+.toolbar .grp button{border:none;border-right:1px solid var(--rule);border-radius:0}
+.toolbar .grp button:last-child{border-right:none}
+.toolbar button:hover{background:var(--surface-sunken)}
+.toolbar .note{font-size:12.5px;color:var(--ink-muted);margin-left:auto}
 
-/* ============ SECTIONS ============ */
-.section{padding:62px 0;border-bottom:1px solid var(--line);position:relative}
-.section-white{background:#fff}
-.section-head{max-width:840px;margin-bottom:28px}
-.section-head .tag{display:inline-flex;align-items:center;gap:8px;color:#8a6320;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12.5px;line-height:1.5}
-.section-head .num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold-pale);color:#8f6a2a;font-size:14px;font-weight:800;margin-right:4px;flex:none}
-.section-head h2{font-size:clamp(23px,3.2vw,33px);margin:12px 0 10px;line-height:1.22;font-weight:700}
-.section-head p{color:var(--muted);margin:0;font-size:16px;max-width:820px}
+/* ===================== MỤC & TIÊU ĐỀ ===================== */
+.section{padding:var(--space-16) 0;border-bottom:1px solid var(--rule);position:relative}
+@media(min-width:900px){.section{padding:var(--space-24) 0}}
+.section-white{background:var(--surface)}
+.section-head{max-width:70ch;margin-bottom:var(--space-12)}
+.section-head .tag{display:inline-flex;align-items:flex-start;gap:9px;color:var(--ink-muted);font-size:13px;font-weight:500;line-height:1.55;max-width:62ch}
+.section-head .tag::before{content:"";width:9px;height:9px;border-radius:var(--radius-stamp);background:var(--gold-500);flex:none;margin-top:7px}
+.section-head .num{display:none}
+.section-head h2{font-size:clamp(25px,3.3vw,36px);margin:14px 0 12px;line-height:1.18}
+.section-head p{color:var(--ink-muted);margin:0;font-size:16.5px}
 
-/* ============ CARDS ============ */
-.cards{display:grid;gap:16px}
+/* ===================== KHỐI NỘI DUNG (thay cho thẻ đổ bóng) ===================== */
+.cards{display:grid;gap:var(--space-4)}
 @media(min-width:680px){.cards.c2{grid-template-columns:repeat(2,1fr)}.cards.c3{grid-template-columns:repeat(3,1fr)}.cards.c4{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.cards.c4{grid-template-columns:repeat(4,1fr)}}
-.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm)}
-.card h3{margin:0 0 8px;font-size:17px;line-height:1.35}
-.card p{margin:0 0 9px;color:#3d4f49;font-size:14.5px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-md);padding:var(--space-6)}
+.section-white .card{background:var(--paper)}
+.card h3{font-family:var(--font-display);margin:0 0 9px;font-size:18px;line-height:1.3}
+.card p{margin:0 0 9px;color:var(--ink);font-size:14.5px}
 .card p:last-child{margin-bottom:0}
-.card ul,.card ol{margin:8px 0 0;padding-left:20px}
+.card ul,.card ol{margin:9px 0 0;padding-left:20px}
 .card li{margin-bottom:7px;font-size:14.5px}
-a.card{text-decoration:none;color:inherit;display:block;transition:.16s}
-a.card:hover{border-color:var(--gold-2);transform:translateY(-3px);box-shadow:var(--shadow)}
-.ico-badge{width:52px;height:52px;border-radius:15px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(145deg,var(--green2),var(--deep));color:var(--gold-soft);box-shadow:0 8px 18px rgba(14,51,45,.24),inset 0 1px 0 rgba(255,255,255,.22);margin-bottom:14px;border:1px solid rgba(201,154,61,.4)}
-.ico-badge.sm{width:42px;height:42px;border-radius:12px;margin-bottom:0}
-.ico-badge svg.ic{width:27px;height:27px}
-.ico-badge.sm svg.ic{width:22px;height:22px}
-.ico-badge.red{background:linear-gradient(145deg,#c24e4a,#8f2f2c);color:#ffe3e0;border-color:rgba(255,200,196,.45)}
-.ico-badge.gold{background:linear-gradient(145deg,#d6ac58,#a9801f);color:#3a2a07;border-color:rgba(255,236,196,.5)}
-.ico-badge.navy{background:linear-gradient(145deg,#345f7c,#1e3d53);color:#dcebf7;border-color:rgba(200,220,245,.4)}
-.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 11px;border-radius:999px;background:#e9f2ec;color:var(--green);border:1px solid #cfdfd2;margin:0 4px 6px 0}
-.pill.red{background:var(--red-soft);color:var(--red);border-color:var(--red-line)}
-.pill.gold{background:#fbf3da;color:#7c5c14;border-color:#ecd9a0}
-.pill.navy{background:#e8eef4;color:var(--navy);border-color:#c9d6e2}
+a.card{text-decoration:none;color:inherit;display:block;transition:border-color .16s,background .16s}
+a.card:hover{border-color:var(--green-500);background:var(--surface-sunken)}
+.ico-badge{width:40px;height:40px;border-radius:var(--radius-stamp);display:inline-flex;align-items:center;justify-content:center;background:transparent;color:var(--green-700);border:1px solid var(--rule-strong);margin-bottom:14px}
+.ico-badge.sm{width:34px;height:34px;margin-bottom:0}
+.ico-badge svg.ic{width:21px;height:21px}
+.ico-badge.sm svg.ic{width:18px;height:18px}
+.ico-badge.red{color:var(--level-4);border-color:var(--level-4)}
+.ico-badge.gold{color:var(--gold-500);border-color:var(--gold-500)}
+.ico-badge.navy{color:var(--level-1);border-color:var(--level-1)}
+.pill{display:inline-block;font-size:12px;font-weight:500;font-variant-numeric:tabular-nums;padding:3px 9px;border-radius:var(--radius-xs);background:var(--surface-sunken);color:var(--ink-muted);border:1px solid var(--rule);margin:0 4px 6px 0}
+.section-white .pill{background:var(--paper)}
+.pill.red{background:transparent;color:var(--level-4);border-color:var(--level-4)}
+.pill.gold{background:transparent;color:var(--level-2);border-color:var(--level-2)}
+.pill.navy{background:transparent;color:var(--level-1);border-color:var(--level-1)}
 
-/* ============ TABLES ============ */
-.tbl-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);-webkit-overflow-scrolling:touch}
+/* ===================== BẢNG ===================== */
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule-strong);border-radius:var(--radius-md);-webkit-overflow-scrolling:touch}
 table{border-collapse:collapse;width:100%;min-width:660px}
-caption{text-align:left;padding:14px 16px 0;font-weight:700;color:var(--green);font-size:15px}
-th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
-thead th{background:var(--green);color:#fff;font-size:13.5px;font-weight:700;position:sticky;top:0}
+caption{text-align:left;padding:16px 16px 0;font-family:var(--font-display);font-weight:600;color:var(--ink);font-size:16px}
+th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--rule);font-size:14.5px;vertical-align:top}
+thead th{background:var(--green-900);color:#fff;font-family:var(--font-sans);font-size:13px;font-weight:600;position:sticky;top:0}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:nth-child(even){background:#faf9f3}
-tbody tr:hover{background:#f3f7ee}
-td.fine{font-weight:800;color:var(--red);white-space:nowrap;font-size:14px}
-td.ref{white-space:nowrap;font-weight:700;color:var(--green)}
-td.ref small{color:var(--muted);font-weight:600}
+tbody tr:nth-child(even){background:var(--surface-sunken)}
+td.ref{white-space:nowrap;font-size:12.5px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+td.ref b{display:block;color:var(--ink);font-size:13px;font-weight:600}
+td.fine{white-space:nowrap;font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums}
+/* thang mức độ */
+tr[data-level] td:first-child{border-left:4px solid var(--rule-strong)}
+tr[data-level="0"] td:first-child{border-left-color:var(--level-0)} tr[data-level="0"] td.fine{color:var(--level-0)}
+tr[data-level="1"] td:first-child{border-left-color:var(--level-1)} tr[data-level="1"] td.fine{color:var(--level-1)}
+tr[data-level="2"] td:first-child{border-left-color:var(--level-2)} tr[data-level="2"] td.fine{color:var(--level-2)}
+tr[data-level="3"] td:first-child{border-left-color:var(--level-3)} tr[data-level="3"] td.fine{color:var(--level-3)}
+tr[data-level="4"] td:first-child{border-left-color:var(--level-4)} tr[data-level="4"] td.fine{color:var(--level-4)}
+.section-white .sev-legend .s{background:var(--paper)}
+.sev-legend{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule-strong);border-radius:var(--radius-md);overflow:hidden;margin:0 0 var(--space-4)}
+.sev-legend .s{flex:1 1 150px;padding:11px 14px;border-right:1px solid var(--rule);background:var(--surface);text-decoration:none}
+.sev-legend a.s:hover{background:var(--surface-sunken)}
+.sev-legend .s:last-child{border-right:none}
+.sev-legend b{display:block;font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;padding-left:11px;border-left:4px solid currentColor}
+.sev-legend span{display:block;font-size:12px;color:var(--ink-muted);margin-top:3px;padding-left:15px}
+.sev-legend .s0{color:var(--level-0)} .sev-legend .s1{color:var(--level-1)} .sev-legend .s2{color:var(--level-2)}
+.sev-legend .s3{color:var(--level-3)} .sev-legend .s4{color:var(--level-4)} .sev-legend .s5{color:var(--level-5)}
+/* chuyển nhóm đối tượng */
+.scope-tabs{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule-strong);border-radius:var(--radius-sm);overflow:hidden;margin:0 0 var(--space-4)}
+.scope-tabs button{flex:1 1 auto;background:var(--surface);border:none;border-right:1px solid var(--rule);padding:13px 18px;font-family:inherit;font-size:14px;font-weight:600;color:var(--ink-muted);cursor:pointer;text-align:left;line-height:1.35}
+.scope-tabs button:last-child{border-right:none}
+.scope-tabs button small{display:block;font-weight:400;font-size:12.5px;margin-top:2px}
+.scope-tabs button[aria-selected="true"]{background:var(--green-900);color:#fff}
+.scope-tabs button[aria-selected="true"] small{color:var(--gold-300)}
+.scope-tabs button:hover:not([aria-selected="true"]){background:var(--surface-sunken);color:var(--ink)}
 
-/* ============ SEARCH ============ */
+/* ===================== TÌM KIẾM ===================== */
 .searchbar{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 12px}
-.searchbar input,.searchbar select{flex:1 1 240px;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;font-size:15px;font-family:inherit;background:#fff;color:var(--ink)}
-.searchbar input:focus,.searchbar select:focus{outline:2px solid var(--gold-2);outline-offset:1px;border-color:var(--gold-2)}
+.searchbar input,.searchbar select{flex:1 1 240px;padding:12px 14px;border:1px solid var(--rule-strong);border-radius:var(--radius-sm);font-size:15px;font-family:inherit;background:var(--surface);color:var(--ink)}
 .searchbar select{flex:0 1 240px}
-.search-status{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:18px}
+.search-status{font-size:13px;color:var(--ink-muted);margin:0 0 12px;min-height:18px;font-variant-numeric:tabular-nums}
 
-/* ============ PROCEDURE ============ */
-.proc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:14px;box-shadow:var(--shadow-sm)}
-.proc-head{display:flex;gap:14px;align-items:flex-start}
-.proc h3{margin:0 0 6px;font-size:17.5px;line-height:1.3}
-.proc .meta{display:flex;flex-wrap:wrap;gap:0;margin:2px 0 8px}
-.proc details{border-top:1px dashed var(--line);margin-top:12px;padding-top:12px}
-.proc summary{cursor:pointer;font-weight:700;color:var(--green);list-style:none;display:flex;align-items:center;gap:8px}
-.proc summary::-webkit-details-marker{display:none}
-.proc summary::before{content:"";width:9px;height:9px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg);transition:transform .2s;margin-right:2px}
-.proc details[open] summary::before{transform:rotate(45deg)}
+/* ===================== THỦ TỤC (gập mở) ===================== */
+.proc{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-md);margin-bottom:10px;overflow:hidden}
+.section-white .proc{background:var(--paper)}
+.proc>summary{cursor:pointer;list-style:none;display:flex;gap:14px;align-items:flex-start;padding:var(--space-4) var(--space-6)}
+.proc>summary::-webkit-details-marker{display:none}
+.proc>summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--ink-muted);border-bottom:2px solid var(--ink-muted);transform:rotate(45deg);margin-left:auto;margin-top:8px;flex:none;transition:transform .2s}
+.proc[open]>summary::after{transform:rotate(-135deg)}
+.proc[open]>summary{border-bottom:1px solid var(--rule);background:var(--surface-sunken)}
+.proc h3{font-family:var(--font-display);margin:0;font-size:17.5px;line-height:1.32}
+.proc .meta{display:flex;flex-wrap:wrap;margin:6px 0 0}
+.proc-body{padding:var(--space-6)}
+.proc-body>p:first-child{margin-top:0}
+.proc details{border-top:1px dashed var(--rule-strong);margin-top:14px;padding-top:12px}
+.proc details summary{cursor:pointer;font-weight:600;color:var(--green-700);list-style:none;display:flex;align-items:center;gap:8px;font-size:14.5px}
+.proc details summary::-webkit-details-marker{display:none}
+.proc details summary::before{content:"+";font-family:var(--font-mono);font-weight:600}
+.proc details[open] summary::before{content:"−"}
 .proc ol,.proc ul{margin:10px 0 0;padding-left:22px}
 .proc li{margin-bottom:6px;font-size:14.5px}
-.kv{display:grid;gap:10px;margin-top:12px}
+.kv{display:grid;gap:0;margin-top:14px;border:1px solid var(--rule);border-radius:var(--radius-sm);overflow:hidden}
 @media(min-width:760px){.kv{grid-template-columns:repeat(3,1fr)}}
-.kv div{background:var(--cream);border-radius:12px;padding:12px 14px;font-size:14px}
-.kv div>b:first-child{display:block;color:var(--green);font-size:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px;font-weight:800}
+.kv div{background:var(--surface-sunken);padding:13px 15px;font-size:14px;border-right:1px solid var(--rule)}
+.kv div:last-child{border-right:none}
+.proc-body>.kv:first-child,.proc-body>p:first-child+.kv{margin-top:0}
+.kv div:last-child{border-right:none}
+.kv div>b:first-child{display:block;color:var(--ink-muted);font-size:12px;font-weight:600;letter-spacing:.02em;margin-bottom:5px}
 
-/* ============ ALERTS ============ */
-.alert{border-radius:var(--radius);padding:20px 22px;margin:18px 0 0;border:1px solid}
-.alert.red{background:var(--red-soft);border-color:var(--red-line)}
-.alert.gold{background:#fbf3da;border-color:#ecd9a0}
-.alert.green{background:#e9f2ec;border-color:#cfdfd2}
-.alert h3{margin:0 0 8px;font-size:17px;display:flex;align-items:center;gap:8px}
+/* ===================== HỘP LƯU Ý ===================== */
+.alert{border-radius:var(--radius-md);padding:var(--space-6);margin:var(--space-6) 0 0;border:1px solid var(--rule-strong);border-left-width:4px;background:var(--surface)}
+.section-white .alert{background:var(--paper)}
+.alert.red{border-left-color:var(--level-4)}
+.alert.gold{border-left-color:var(--level-2)}
+.alert.green{border-left-color:var(--green-500)}
+.alert h3{font-family:var(--font-display);margin:0 0 9px;font-size:17.5px;display:flex;align-items:center;gap:9px}
+.alert.red h3{color:var(--level-4)} .alert.gold h3{color:var(--level-2)} .alert.green h3{color:var(--green-700)}
 .alert p,.alert li{font-size:14.5px}
 .alert p:last-child,.alert li:last-child{margin-bottom:0}
 ol.num,ul.num{margin:10px 0 0;padding-left:22px}
 ol.num li,ul.num li{margin-bottom:8px;font-size:14.5px}
 
-/* ============ CRIME ============ */
-.crime{border-left:5px solid var(--red)}
-.crime .fine{color:var(--red);font-weight:800;font-size:15px}
+/* ===================== HÌNH SỰ ===================== */
+.crime{border-left:4px solid var(--level-5)}
+.crime .fine{color:var(--level-5);font-weight:700;font-size:14.5px;font-variant-numeric:tabular-nums}
 
-/* ============ LINK CARDS (liên kết hữu ích) ============ */
-.link-card{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm);transition:.16s}
-.link-card:hover{border-color:var(--gold-2);transform:translateY(-2px);box-shadow:var(--shadow)}
-.link-card h3{margin:0 0 4px;font-size:16px;display:flex;align-items:center;gap:7px}
-.link-card h3 svg{width:15px;height:15px;color:var(--gold)}
-.link-card p{margin:0;font-size:13.5px;color:var(--muted)}
-.link-card .host{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--green)}
+/* ===================== LIÊN KẾT ===================== */
+.link-card{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-md);padding:var(--space-4) var(--space-6);text-decoration:none;color:inherit;transition:border-color .16s,background .16s}
+.section-white .link-card{background:var(--paper)}
+.link-card:hover{border-color:var(--green-500);background:var(--surface-sunken)}
+.link-card h3{font-family:var(--font-display);margin:0 0 4px;font-size:16px;display:flex;align-items:center;gap:7px}
+.link-card h3 svg{width:14px;height:14px;color:var(--ink-muted)}
+.link-card p{margin:0;font-size:13.5px;color:var(--ink-muted)}
+.link-card .host{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:500;color:var(--green-700)}
 
-/* ============ CONTACT ============ */
-.contact-hero{background:linear-gradient(150deg,var(--deep),var(--green));color:#fff;border-radius:22px;padding:30px;position:relative;overflow:hidden}
-.contact-hero>*{position:relative;z-index:2}
-.contact-hero h2{margin:12px 0 6px;font-size:clamp(23px,3.2vw,31px)}
-.contact-hero .phone{display:inline-flex;align-items:center;gap:12px;font-size:clamp(30px,5vw,44px);font-weight:800;color:var(--gold-soft);text-decoration:none;letter-spacing:.01em;margin:6px 0 4px}
-.contact-hero p{color:#dbe8e1}
-.contact-grid{display:grid;gap:12px;margin-top:18px}
-@media(min-width:760px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
-.cc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px}
-.cc b{display:flex;align-items:center;gap:7px;margin-bottom:6px;color:var(--gold-soft);font-size:14px}
-.cc,.cc a{color:#eaf3ec}
-.cc a{font-weight:700}
-form.compose{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-top:18px;box-shadow:var(--shadow-sm)}
-form.compose label{display:block;font-weight:700;font-size:13.5px;margin:12px 0 5px}
-form.compose input,form.compose textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:15px;color:var(--ink)}
-form.compose input:focus,form.compose textarea:focus{outline:2px solid var(--gold-2);outline-offset:1px;border-color:var(--gold-2)}
-form.compose .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
-
-/* ============ SOURCES ============ */
-.sources{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
-.sources li{font-size:14.5px;margin-bottom:9px}
-.fee-note{font-size:13px;color:var(--muted);margin:10px 0 0}
-
-/* ============ FOOTER ============ */
-.footer{background:var(--deep);color:#cfe0d5;margin-top:0;padding:40px 0 calc(var(--dock-h) + 20px);font-size:14px;position:relative;overflow:hidden;text-align:center}
-.footer .wrap{position:relative;z-index:2}
-.footer-logos{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:14px}
-.footer-logos img{height:58px;width:auto;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.45))}
-.footer b{color:#fff}
-.footer .motto{color:var(--gold-soft);font-weight:700;margin-top:10px}
-
-/* ============ DOCK ============ */
-.dock{position:fixed;left:0;right:0;bottom:0;z-index:130;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:flex;box-shadow:0 -4px 16px rgba(14,51,45,.08)}
-.dock a{flex:1;text-align:center;padding:9px 4px 11px;text-decoration:none;color:var(--green);font-size:11.5px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:3px}
-.dock a svg{width:21px;height:21px}
-.dock a.call{color:var(--red)}
-@media(min-width:1080px){.dock{display:none}body{padding-bottom:0}.footer{padding-bottom:40px}}
-
-/* ============ BACK TO TOP ============ */
-.to-top{position:fixed;right:18px;bottom:calc(var(--dock-h) + 14px);z-index:110;width:46px;height:46px;border-radius:50%;background:var(--green);color:#fff;border:none;display:none;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow)}
-.to-top.show{display:inline-flex}
-@media(min-width:1080px){.to-top{bottom:24px}}
-
-
-/* ===== Dải minh hoạ Mũi Cà Mau ===== */
-.camau-wrap{position:relative;margin-top:6px;line-height:0;overflow:hidden}
-.camau-band{display:block;width:100%;height:auto;max-height:300px}
-@media(max-width:760px){.camau-band{width:188%;margin-left:-44%}}
-.camau-caption{position:absolute;right:26px;bottom:12px;line-height:1.4;font-size:12px;font-weight:600;letter-spacing:.04em;color:#b9d4c7;text-shadow:0 1px 6px rgba(4,20,17,.85),0 0 2px rgba(4,20,17,.9)}
-.camau-caption b{color:var(--gold-soft);font-weight:700}
-@media(max-width:620px){.camau-caption{right:14px;bottom:8px;font-size:11px}}
-
-/* ===== Mẫu bìa hộ chiếu ===== */
-.pp-row{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);margin:0 0 20px}
+/* ===================== GIẤY TỜ ===================== */
+.pp-row{display:grid;gap:var(--space-4);grid-template-columns:repeat(2,1fr);margin:0 0 var(--space-6)}
 @media(min-width:820px){.pp-row{grid-template-columns:repeat(4,1fr)}}
-.pp-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 16px;text-align:center;box-shadow:var(--shadow-sm)}
-.pp-card .pp{width:88px;height:auto;filter:drop-shadow(0 10px 18px rgba(14,51,45,.26))}
-.pp-card b{display:block;margin-top:14px;font-size:14.5px;line-height:1.35}
-.pp-card .who{display:block;font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.5}
-.pp-swatch{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-size:12px;font-weight:700;color:var(--green);background:var(--cream);border:1px solid var(--line);padding:4px 11px;border-radius:999px}
-.pp-swatch i{width:11px;height:11px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
-.pp-t1{font-size:6.4px;font-weight:600;letter-spacing:.1px}
-.pp-t2{font-size:11px;font-weight:800;letter-spacing:.5px}
-.pp-t3{font-size:6.8px;font-weight:600;letter-spacing:1.1px}
-.pp text{fill:#e7c37a;text-anchor:middle;font-family:inherit}
+.pp-card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-md);padding:var(--space-6) var(--space-4);text-align:center}
+.section-white .pp-card{background:var(--paper)}
+.pp-card .pp{width:84px;height:auto;filter:var(--shadow-lift)}
+.pp-card b{display:block;font-family:var(--font-display);margin-top:14px;font-size:15.5px;line-height:1.3}
+.pp-card .who{display:block;font-size:12.5px;color:var(--ink-muted);margin-top:6px;line-height:1.5}
+.pp-swatch{display:inline-flex;align-items:center;gap:7px;margin-top:11px;font-size:12px;font-weight:500;color:var(--ink-muted);border:1px solid var(--rule);padding:4px 10px;border-radius:var(--radius-xs)}
+.pp-swatch i{width:10px;height:10px;border-radius:var(--radius-xs);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.pp-t1{font-size:6.4px;font-weight:600} .pp-t2{font-size:11px;font-weight:700} .pp-t3{font-size:6.8px;font-weight:600}
+.pp text{fill:#e7c37a;text-anchor:middle;font-family:var(--font-sans)}
 
-/* ============ MISC ============ */
-.hidden{display:none!important}
-mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
-:focus-visible{outline:2px solid var(--gold-2);outline-offset:2px;border-radius:4px}
+/* ===================== LIÊN HỆ ===================== */
+.contact-hero{background:var(--green-900);color:#fff;border-radius:var(--radius-md);padding:var(--space-8);position:relative;overflow:hidden}
+.contact-hero>*{position:relative;z-index:2}
+.contact-hero h2{margin:14px 0 8px;font-size:clamp(24px,3.3vw,32px)}
+.contact-hero .phone{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-mono);font-size:clamp(28px,5vw,44px);font-weight:600;color:var(--gold-300);text-decoration:none;margin:8px 0 4px}
+.contact-hero p{color:#cfe0d6}
+.contact-grid{display:grid;gap:0;margin-top:20px;border-top:1px solid rgba(231,195,122,.26)}
+@media(min-width:760px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.cc{padding:16px 18px;border-bottom:1px solid rgba(231,195,122,.16);border-right:1px solid rgba(231,195,122,.16)}
+.cc b{display:flex;align-items:center;gap:7px;margin-bottom:6px;color:var(--gold-300);font-size:13.5px;font-weight:600}
+.cc,.cc a{color:#dbe8e1;font-size:13.5px}
+.cc a{font-weight:600;font-family:var(--font-mono)}
+form.compose{background:var(--surface);border:1px solid var(--rule-strong);border-radius:var(--radius-md);padding:var(--space-8);margin-top:var(--space-6)}
+form.compose h3{font-family:var(--font-display);font-size:18px}
+form.compose label{display:block;font-weight:600;font-size:13px;margin:14px 0 5px}
+form.compose input,form.compose textarea{width:100%;padding:11px 13px;border:1px solid var(--rule-strong);border-radius:var(--radius-sm);font-family:inherit;font-size:15px;color:var(--ink);background:var(--paper)}
+form.compose .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center}
+
+/* ===================== NGUỒN & CHÂN TRANG ===================== */
+.sources{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-md);padding:var(--space-8)}
+.section-white .sources{background:var(--paper)}
+.sources li{font-size:14.5px;margin-bottom:10px}
+.fee-note{font-size:13px;color:var(--ink-muted);margin:12px 0 0}
+.footer{background:var(--green-900);color:#b9d0c3;padding:48px 0 calc(var(--dock-h,72px) + 24px);font-size:14px;position:relative;overflow:hidden;text-align:center}
+.footer .wrap{position:relative;z-index:2}
+.footer-logos{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:16px}
+.footer-logos img{height:56px;width:auto;object-fit:contain}
+.footer b{color:#fff}
+.footer .motto{font-family:var(--font-display);color:var(--gold-300);font-size:17px;font-weight:600;margin-top:14px}
+
+/* ===================== THANH THAO TÁC & LÊN ĐẦU ===================== */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:130;background:var(--surface);border-top:1px solid var(--rule-strong);display:flex}
+.dock a{flex:1;text-align:center;padding:9px 4px 11px;text-decoration:none;color:var(--green-700);font-size:11.5px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:3px}
+.dock a svg{width:20px;height:20px}
+.dock a.call{color:var(--level-4)}
+@media(min-width:1160px){.dock{display:none}body{padding-bottom:0}.footer{padding-bottom:48px}}
+.to-top{position:fixed;right:18px;bottom:calc(var(--dock-h,72px) + 14px);z-index:110;width:44px;height:44px;border-radius:var(--radius-stamp);background:var(--green-700);color:#fff;border:none;display:none;align-items:center;justify-content:center;cursor:pointer}
+.to-top.show{display:inline-flex}
+@media(min-width:1160px){.to-top{bottom:24px}}
+
+/* ===================== IN ===================== */
 @media print{
-  .site-header,.section-toc,.toolbar,.dock,.to-top,.hero-actions,.mobile-nav,form.compose,.menu-toggle{display:none!important}
-  body{padding-bottom:0;background:#fff;font-size:12.5px}
-  .section{padding:18px 0;border-bottom:1px solid #ccc}
-  .hero{background:#fff;color:#000}.hero h1,.hero h1 .accent,.hero-intro,.eyebrow{color:#000!important}
-  .card,.proc,.alert{break-inside:avoid;box-shadow:none}
-  .drum-motif,.emblem-panel{display:none}
+  .site-header,.section-toc,.toolbar,.dock,.to-top,.hero-actions,.mobile-nav,form.compose,.menu-toggle,.scope-tabs{display:none!important}
+  body{padding-bottom:0;background:#fff;font-size:12px}
+  .section{padding:16px 0}
+  .hero{background:#fff;color:#000}.hero h1,.hero h1 .accent,.hero-intro,.eyebrow,.stat b,.stat span{color:#000!important}
+  .card,.proc,.alert{break-inside:avoid}
+  .proc[open] .proc-body,.proc-body{display:block!important}
+  .drum-motif,.emblem-panel,.camau-wrap{display:none}
+  tr.hidden,.hidden{display:table-row!important}
   a{color:#000;text-decoration:none}
 }
+
 </style>
 </head>
 <body id="top">
@@ -544,9 +667,9 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section" id="giay-to">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><span class="num">02</span> Giấy tờ xuất nhập cảnh · Điều 6, Điều 7 Luật số 49/2019/QH14</span>
+        <span class="tag"><span class="num">02</span> Giấy tờ xuất nhập cảnh</span>
         <h2>Bốn loại giấy tờ xuất nhập cảnh và thời hạn sử dụng</h2>
-        <p>Hộ chiếu là giấy tờ thuộc quyền sở hữu của Nhà nước, do cơ quan có thẩm quyền của Việt Nam cấp cho công dân Việt Nam để xuất cảnh, nhập cảnh, chứng minh quốc tịch và nhân thân.</p>
+        <p>Hộ chiếu là giấy tờ thuộc quyền sở hữu của Nhà nước, do cơ quan có thẩm quyền của Việt Nam cấp cho công dân Việt Nam để xuất cảnh, nhập cảnh, chứng minh quốc tịch và nhân thân. Bốn loại giấy tờ và thời hạn sử dụng được quy định tại <b>Điều 6 và Điều 7 Luật số 49/2019/QH14</b>.</p>
       </div>
       <div class="pp-row">
         <div class="pp-card">
@@ -604,7 +727,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
       </div>
       <div class="cards c2" style="margin-top:16px">
         <div class="card">
-          <h3><svg class="ic sm" style="color:var(--green)"><use href="#i-check"/></svg> Điều kiện xuất cảnh (Điều 33)</h3>
+          <h3><svg class="ic sm" style="color:var(--green-700)"><use href="#i-check"/></svg> Điều kiện xuất cảnh (Điều 33)</h3>
           <ul>
             <li>Có giấy tờ xuất nhập cảnh <b>còn nguyên vẹn, còn thời hạn</b>; đối với hộ chiếu phải <b>còn hạn từ đủ 06 tháng trở lên</b>;</li>
             <li>Có thị thực hoặc giấy tờ xác nhận, chứng minh được nước đến cho nhập cảnh, trừ trường hợp được miễn thị thực;</li>
@@ -613,7 +736,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
           </ul>
         </div>
         <div class="card">
-          <h3><svg class="ic sm" style="color:var(--green)"><use href="#i-arrive"/></svg> Điều kiện nhập cảnh (Điều 34) &amp; kiểm soát (Điều 35)</h3>
+          <h3><svg class="ic sm" style="color:var(--green-700)"><use href="#i-arrive"/></svg> Điều kiện nhập cảnh (Điều 34) &amp; kiểm soát (Điều 35)</h3>
           <ul>
             <li>Công dân Việt Nam được nhập cảnh khi có giấy tờ xuất nhập cảnh <b>còn nguyên vẹn, còn thời hạn sử dụng</b>;</li>
             <li>Khi xuất cảnh, nhập cảnh phải xuất trình giấy tờ cho người làm nhiệm vụ kiểm soát xuất nhập cảnh hoặc qua cổng kiểm soát tự động (autogate);</li>
@@ -636,9 +759,9 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section section-white" id="thu-tuc">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><span class="num">03</span> Thủ tục hành chính · Chương III Luật số 49/2019/QH14 (sửa đổi, bổ sung năm 2023)</span>
+        <span class="tag"><span class="num">03</span> Thủ tục hành chính</span>
         <h2>Thủ tục hành chính đối với công dân Việt Nam</h2>
-        <p>Hai cách nộp hồ sơ: <b>trực tiếp</b> tại cơ quan quản lý xuất nhập cảnh hoặc <b>trực tuyến</b> trên Cổng dịch vụ công Bộ Công an / Cổng dịch vụ công quốc gia (đăng nhập bằng tài khoản định danh điện tử VNeID mức độ 2). Nhận kết quả tại cơ quan hoặc qua dịch vụ bưu chính công ích (trả phí chuyển phát).</p>
+        <p>Hai cách nộp hồ sơ: <b>trực tiếp</b> tại cơ quan quản lý xuất nhập cảnh hoặc <b>trực tuyến</b> trên Cổng dịch vụ công Bộ Công an / Cổng dịch vụ công quốc gia (đăng nhập bằng tài khoản định danh điện tử VNeID mức độ 2). Nhận kết quả tại cơ quan hoặc qua dịch vụ bưu chính công ích (trả phí chuyển phát). Trình tự, thẩm quyền và thời hạn giải quyết theo <b>Chương III Luật số 49/2019/QH14</b> (sửa đổi, bổ sung năm 2023). Bấm vào từng thủ tục để mở nội dung chi tiết.</p>
       </div>
 
       <div class="alert green" style="margin:0 0 20px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center">
@@ -653,10 +776,11 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
       </div>
       <p class="search-status" id="proc-status"></p>
 
-      <article class="proc" data-search="cấp hộ chiếu phổ thông lần đầu trong nước người lớn 14 tuổi">
-        <div class="proc-head"><span class="ico-badge sm"><svg class="ic"><use href="#i-passport"/></svg></span>
+      <details class="proc" open data-search="cấp hộ chiếu phổ thông lần đầu trong nước người lớn 14 tuổi">
+        <summary><span class="ico-badge sm"><svg class="ic"><use href="#i-passport"/></svg></span>
           <div><h3>1. Cấp hộ chiếu phổ thông lần đầu ở trong nước</h3>
-          <div class="meta"><span class="pill">Điều 15</span> <span class="pill gold">Phổ biến nhất</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 15</span> <span class="pill gold">Phổ biến nhất</span></div></summary>
+        <div class="proc-body"></div>
         <div class="kv">
           <div><b>Nơi nộp</b>Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; có thẻ căn cước thì nộp tại Công an cấp tỉnh nơi thuận lợi. Tại Cà Mau: Phòng Quản lý xuất nhập cảnh, Công an tỉnh Cà Mau. Bốn trường hợp đặc biệt (đi chữa bệnh; thân nhân ở nước ngoài bị tai nạn, bệnh tật, chết; cán bộ, công chức, lực lượng vũ trang có văn bản đề nghị của cơ quan quản lý; lý do nhân đạo, khẩn cấp khác) có thể nộp tại Cục Quản lý xuất nhập cảnh, Bộ Công an.</div>
           <div><b>Thời hạn giải quyết</b>Không quá <b>08 ngày làm việc</b> tại cấp tỉnh; <b>05 ngày làm việc</b> tại Cục QLXNC; trường hợp đặc biệt không quá <b>03 ngày làm việc</b> kể từ ngày tiếp nhận đủ hồ sơ.</div>
@@ -670,13 +794,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li>Người đề nghị được chụp ảnh, thu thập vân tay khi đề nghị cấp hộ chiếu có gắn chíp điện tử lần đầu;</li>
             <li>Nộp lệ phí, nhận giấy hẹn trả kết quả; nhận hộ chiếu tại cơ quan hoặc qua bưu chính.</li>
           </ul>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" data-search="cấp hộ chiếu từ lần thứ hai hết hạn hết trang hỏng thay đổi thông tin nhân thân cấp lại cấp đổi">
-        <div class="proc-head"><span class="ico-badge gold sm"><svg class="ic"><use href="#i-refresh"/></svg></span>
+      <details class="proc" data-search="cấp hộ chiếu từ lần thứ hai hết hạn hết trang hỏng thay đổi thông tin nhân thân cấp lại cấp đổi">
+        <summary><span class="ico-badge gold sm"><svg class="ic"><use href="#i-refresh"/></svg></span>
           <div><h3>2. Cấp hộ chiếu phổ thông từ lần thứ hai trở đi</h3>
-          <div class="meta"><span class="pill">Điều 15 khoản 5, 7</span> <span class="pill gold">Hết hạn · Hết trang · Hư hỏng · Đổi nhân thân</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 15 khoản 5, 7</span> <span class="pill gold">Hết hạn · Hết trang · Hư hỏng · Đổi nhân thân</span></div></summary>
+        <div class="proc-body"></div>
         <p style="font-size:14.5px">Áp dụng khi hộ chiếu đã cấp hết hạn, sắp hết hạn, hết trang, bị hư hỏng, hoặc có thay đổi thông tin nhân thân (họ tên, ngày sinh, giới tính…) so với hộ chiếu cấp lần gần nhất. Hộ chiếu phổ thông <b>không gia hạn</b> — mọi trường hợp đều cấp quyển mới.</p>
         <div class="kv">
           <div><b>Nơi nộp</b>Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh <b>nơi thuận lợi</b> hoặc Cục Quản lý xuất nhập cảnh, Bộ Công an; hoặc nộp trực tuyến.</div>
@@ -689,13 +814,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li>Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng (nộp lại); nếu bị mất phải kèm đơn báo mất hoặc thông báo đã tiếp nhận đơn báo mất (Điều 28);</li>
             <li>Bản chụp thẻ căn cước đối với trường hợp có thay đổi thông tin nhân thân so với hộ chiếu cấp lần gần nhất.</li>
           </ul>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" data-search="cấp hộ chiếu trực tuyến online dịch vụ công vneid qua mạng internet">
-        <div class="proc-head"><span class="ico-badge sm"><svg class="ic"><use href="#i-globe"/></svg></span>
+      <details class="proc" data-search="cấp hộ chiếu trực tuyến online dịch vụ công vneid qua mạng internet">
+        <summary><span class="ico-badge sm"><svg class="ic"><use href="#i-globe"/></svg></span>
           <div><h3>3. Cấp hộ chiếu phổ thông trực tuyến (qua Cổng dịch vụ công)</h3>
-          <div class="meta"><span class="pill">Dịch vụ công trực tuyến toàn trình</span> <span class="pill gold">Không cần đến cơ quan khi khai hồ sơ</span></div></div></div>
+          <div class="meta"><span class="pill">Dịch vụ công trực tuyến toàn trình</span> <span class="pill gold">Không cần đến cơ quan khi khai hồ sơ</span></div></summary>
+        <div class="proc-body"></div>
         <details open><summary>07 bước thực hiện</summary>
           <ol>
             <li>Truy cập <b><a href="https://dichvucong.bocongan.gov.vn" target="_blank" rel="noopener noreferrer">Cổng dịch vụ công Bộ Công an</a></b> (dichvucong.bocongan.gov.vn) hoặc <b><a href="https://dichvucong.gov.vn" target="_blank" rel="noopener noreferrer">Cổng dịch vụ công quốc gia</a></b> (dichvucong.gov.vn);</li>
@@ -707,13 +833,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li>Theo dõi trạng thái hồ sơ trên Cổng dịch vụ công / email; nhận hộ chiếu theo hình thức đã đăng ký.</li>
           </ol>
           <p class="fee-note">Lưu ý: ảnh chân dung không đúng quy cách là lý do hồ sơ bị yêu cầu bổ sung nhiều nhất — chụp nền trắng, rõ mặt, không đeo kính, không đội mũ (trừ trường hợp tôn giáo, dân tộc theo quy định).</p>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" data-search="cấp hộ chiếu trẻ em dưới 14 tuổi người mất năng lực hành vi dân sự người đại diện hợp pháp cha mẹ">
-        <div class="proc-head"><span class="ico-badge navy sm"><svg class="ic"><use href="#i-users"/></svg></span>
+      <details class="proc" data-search="cấp hộ chiếu trẻ em dưới 14 tuổi người mất năng lực hành vi dân sự người đại diện hợp pháp cha mẹ">
+        <summary><span class="ico-badge navy sm"><svg class="ic"><use href="#i-users"/></svg></span>
           <div><h3>4. Cấp hộ chiếu cho người chưa đủ 14 tuổi; người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi</h3>
-          <div class="meta"><span class="pill">Điều 15 khoản 2</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 15 khoản 2</span></div></summary>
+        <div class="proc-body"></div>
         <div class="kv">
           <div><b>Ai khai và nộp hồ sơ</b>Cha, mẹ hoặc <b>người đại diện hợp pháp</b> khai, ký tờ khai và nộp thay. Trẻ chưa đủ 14 tuổi khi xuất cảnh phải có người đại diện hợp pháp đi cùng.</div>
           <div><b>Thời hạn hộ chiếu</b><b>05 năm</b>, không gia hạn, chỉ cấp loại <b>không gắn chíp điện tử</b>.</div>
@@ -725,13 +852,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li>Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp (trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra, đối chiếu);</li>
             <li>Người chưa đủ 14 tuổi đã được cấp mã số định danh cá nhân: thông tin được đối chiếu trên Cơ sở dữ liệu quốc gia về dân cư.</li>
           </ul>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" id="thu-tuc-mat" data-search="trình báo mất hộ chiếu giấy thông hành báo mất 48 giờ hủy giá trị sử dụng">
-        <div class="proc-head"><span class="ico-badge red sm"><svg class="ic"><use href="#i-alert"/></svg></span>
+      <details class="proc" id="thu-tuc-mat" data-search="trình báo mất hộ chiếu giấy thông hành báo mất 48 giờ hủy giá trị sử dụng">
+        <summary><span class="ico-badge red sm"><svg class="ic"><use href="#i-alert"/></svg></span>
           <div><h3>5. Trình báo mất hộ chiếu, giấy thông hành</h3>
-          <div class="meta"><span class="pill">Điều 28</span> <span class="pill red">Thực hiện ngay — trong 48 giờ</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 28</span> <span class="pill red">Thực hiện ngay — trong 48 giờ</span></div></summary>
+        <div class="proc-body"></div>
         <p style="font-size:14.5px">Ngay khi trình báo, hộ chiếu được <b>hủy giá trị sử dụng</b> trên hệ thống để tránh bị kẻ xấu lợi dụng. <b>Tuyệt đối không tự ý sử dụng lại</b> hộ chiếu đã báo mất dù sau đó tìm lại được — phải làm thủ tục khôi phục (thủ tục số 6) hoặc cấp lại.</p>
         <details open><summary>Cách thực hiện</summary>
           <ul>
@@ -740,13 +868,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li>Sau khi trình báo, nếu có nhu cầu tiếp tục sử dụng giấy tờ để đi lại: làm thủ tục <b>cấp lại hộ chiếu do bị mất</b> (lệ phí 400.000 đồng, đang giảm 50% đến hết 31/12/2026).</li>
           </ul>
           <p class="fee-note">Không thông báo việc mất giấy tờ XNC cho cơ quan có thẩm quyền là hành vi vi phạm, bị phạt 500.000 – 2.000.000 đồng (điểm a khoản 2 Điều 21 NĐ 282/2025).</p>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" data-search="khôi phục giá trị sử dụng hộ chiếu tìm lại được sau khi báo mất">
-        <div class="proc-head"><span class="ico-badge gold sm"><svg class="ic"><use href="#i-refresh"/></svg></span>
+      <details class="proc" data-search="khôi phục giá trị sử dụng hộ chiếu tìm lại được sau khi báo mất">
+        <summary><span class="ico-badge gold sm"><svg class="ic"><use href="#i-refresh"/></svg></span>
           <div><h3>6. Khôi phục giá trị sử dụng hộ chiếu phổ thông</h3>
-          <div class="meta"><span class="pill">Điều 32</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 32</span></div></summary>
+        <div class="proc-body"></div>
         <div class="kv">
           <div><b>Điều kiện</b>Hộ chiếu đã bị hủy giá trị sử dụng do bị mất <b>ở trong nước</b>, sau khi tìm lại được còn <b>nguyên vẹn</b> và có <b>thị thực do nước ngoài cấp còn thời hạn</b>; chưa được cấp hộ chiếu mới thay thế.</div>
           <div><b>Nơi nộp</b>Cục Quản lý xuất nhập cảnh, Bộ Công an hoặc Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi; hoặc nộp trực tuyến trên Cổng dịch vụ công.</div>
@@ -754,13 +883,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
         </div>
         <details><summary>Hồ sơ</summary>
           <ul><li>Tờ khai đề nghị khôi phục giá trị sử dụng hộ chiếu theo mẫu, kèm theo hộ chiếu đã tìm lại được.</li></ul>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" data-search="cấp hộ chiếu rút gọn ở nước ngoài mất hộ chiếu muốn về nước ngay bị trục xuất nhận trở lại công dân quốc phòng an ninh">
-        <div class="proc-head"><span class="ico-badge gold sm"><svg class="ic"><use href="#i-bolt"/></svg></span>
+      <details class="proc" data-search="cấp hộ chiếu rút gọn ở nước ngoài mất hộ chiếu muốn về nước ngay bị trục xuất nhận trở lại công dân quốc phòng an ninh">
+        <summary><span class="ico-badge gold sm"><svg class="ic"><use href="#i-bolt"/></svg></span>
           <div><h3>7. Cấp hộ chiếu phổ thông theo thủ tục rút gọn</h3>
-          <div class="meta"><span class="pill">Điều 17, Điều 18</span> <span class="pill gold">Thời hạn hộ chiếu không quá 12 tháng</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 17, Điều 18</span> <span class="pill gold">Thời hạn hộ chiếu không quá 12 tháng</span></div></summary>
+        <div class="proc-body"></div>
         <details><summary>04 đối tượng và cách giải quyết</summary>
           <ul>
             <li><b>Người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:</b> nộp đơn báo mất, tờ khai, 02 ảnh và giấy tờ tùy thân (nếu có) tại cơ quan đại diện Việt Nam ở nước ngoài; cơ quan đại diện xem xét, cấp hộ chiếu trong <b>02 ngày làm việc</b> (nếu đủ căn cứ);</li>
@@ -768,36 +898,39 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li><b>Người phải về nước</b> theo điều ước quốc tế hoặc thỏa thuận quốc tế về việc nhận trở lại công dân (hộ chiếu cấp có thời hạn không quá 06 tháng);</li>
             <li><b>Người được cấp hộ chiếu vì lý do quốc phòng, an ninh</b> theo quyết định của Bộ trưởng Bộ Công an.</li>
           </ul>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
-      <article class="proc" data-search="cấp hộ chiếu ở nước ngoài cơ quan đại diện lãnh sự người việt nam định cư sinh sống nước ngoài">
-        <div class="proc-head"><span class="ico-badge sm"><svg class="ic"><use href="#i-globe"/></svg></span>
+      <details class="proc" data-search="cấp hộ chiếu ở nước ngoài cơ quan đại diện lãnh sự người việt nam định cư sinh sống nước ngoài">
+        <summary><span class="ico-badge sm"><svg class="ic"><use href="#i-globe"/></svg></span>
           <div><h3>8. Cấp hộ chiếu phổ thông ở nước ngoài</h3>
-          <div class="meta"><span class="pill">Điều 16</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 16</span></div></summary>
+        <div class="proc-body"></div>
         <div class="kv">
           <div><b>Nơi nộp</b>Cơ quan đại diện Việt Nam ở nước ngoài: cấp lần đầu tại cơ quan đại diện ở nước cư trú; từ lần thứ hai tại cơ quan đại diện nơi thuận lợi.</div>
           <div><b>Thời hạn giải quyết</b><b>05 ngày làm việc</b> đối với cấp lần đầu; <b>03 ngày làm việc</b> đối với cấp từ lần thứ hai, nếu đủ căn cứ cấp hộ chiếu.</div>
           <div><b>Hồ sơ chính</b>Tờ khai, 02 ảnh, giấy tờ liên quan như cấp trong nước; xuất trình hộ chiếu Việt Nam hoặc giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp. Nếu không có, xuất trình giấy tờ tùy thân do nước ngoài cấp cùng giấy tờ chứng minh/căn cứ xác định quốc tịch Việt Nam.</div>
-        </div>
-      </article>
+        </div></div>
+      </details>
 
-      <article class="proc" data-search="hộ chiếu ngoại giao công vụ cấp gia hạn cán bộ lãnh đạo cơ quan bộ ngoại giao lãnh sự">
-        <div class="proc-head"><span class="ico-badge navy sm"><svg class="ic"><use href="#i-brief"/></svg></span>
+      <details class="proc" data-search="hộ chiếu ngoại giao công vụ cấp gia hạn cán bộ lãnh đạo cơ quan bộ ngoại giao lãnh sự">
+        <summary><span class="ico-badge navy sm"><svg class="ic"><use href="#i-brief"/></svg></span>
           <div><h3>9. Cấp, gia hạn hộ chiếu ngoại giao, hộ chiếu công vụ</h3>
-          <div class="meta"><span class="pill">Điều 12, Điều 13</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 12, Điều 13</span></div></summary>
+        <div class="proc-body"></div>
         <div class="kv">
           <div><b>Đối tượng</b>Người thuộc diện Điều 8, Điều 9 của Luật và vợ/chồng, con chưa đủ 18 tuổi đi theo, đi thăm theo quy định.</div>
           <div><b>Nơi nộp</b>Ở trong nước: Cơ quan Lãnh sự Bộ Ngoại giao hoặc cơ quan được Bộ Ngoại giao ủy quyền. Ở nước ngoài: cơ quan đại diện Việt Nam. Phải kèm <b>quyết định cử / văn bản cho phép ra nước ngoài</b> của cơ quan, người có thẩm quyền.</div>
           <div><b>Thời hạn giải quyết</b><b>05 ngày làm việc</b> kể từ ngày tiếp nhận đủ hồ sơ. Thời hạn hộ chiếu từ 01 đến 05 năm; được gia hạn 01 lần không quá 03 năm khi còn giá trị sử dụng dưới 12 tháng.</div>
         </div>
-        <p class="fee-note">Lưu ý quản lý: hộ chiếu ngoại giao, công vụ do cơ quan quản lý theo quy định; người được cấp phải nộp lại cho cơ quan quản lý trong thời hạn 05 ngày làm việc kể từ ngày nhập cảnh sau khi kết thúc chuyến công tác, trừ trường hợp có lý do chính đáng được thủ trưởng cơ quan quản lý quyết định (Điều 24, Điều 25).</p>
-      </article>
+        <p class="fee-note">Lưu ý quản lý: hộ chiếu ngoại giao, công vụ do cơ quan quản lý theo quy định; người được cấp phải nộp lại cho cơ quan quản lý trong thời hạn 05 ngày làm việc kể từ ngày nhập cảnh sau khi kết thúc chuyến công tác, trừ trường hợp có lý do chính đáng được thủ trưởng cơ quan quản lý quyết định (Điều 24, Điều 25).</p></div>
+      </details>
 
-      <article class="proc" data-search="cấp giấy thông hành biên giới campuchia lào trung quốc cư dân biên giới qua lại">
-        <div class="proc-head"><span class="ico-badge sm"><svg class="ic"><use href="#i-pin"/></svg></span>
+      <details class="proc" data-search="cấp giấy thông hành biên giới campuchia lào trung quốc cư dân biên giới qua lại">
+        <summary><span class="ico-badge sm"><svg class="ic"><use href="#i-pin"/></svg></span>
           <div><h3>10. Cấp giấy thông hành</h3>
-          <div class="meta"><span class="pill">Điều 19, Điều 20</span> <span class="pill gold">Thời hạn không quá 12 tháng, không gia hạn</span></div></div></div>
+          <div class="meta"><span class="pill">Điều 19, Điều 20</span> <span class="pill gold">Thời hạn không quá 12 tháng, không gia hạn</span></div></summary>
+        <div class="proc-body"></div>
         <details open><summary>Đối tượng, nơi nộp, thời hạn</summary>
           <ul>
             <li><b>Đối tượng (Điều 19):</b> công dân Việt Nam thường trú tại xã, phường, thị trấn tiếp giáp đường biên giới với nước láng giềng; cán bộ, công chức, viên chức, người lao động thuộc cơ quan, tổ chức, doanh nghiệp của tỉnh có chung đường biên giới; cán bộ, công chức, viên chức, người lao động của cơ quan trung ương, địa phương khác có trụ sở đóng tại tỉnh biên giới — theo điều ước quốc tế giữa Việt Nam với nước có chung đường biên giới;</li>
@@ -805,18 +938,18 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
             <li>Giấy thông hành chỉ có giá trị qua lại khu vực biên giới theo điều ước quốc tế tương ứng, <b>không thay thế hộ chiếu</b> để đi các mục đích, địa bàn khác.</li>
           </ul>
           <p class="fee-note">Tỉnh Cà Mau không có đường biên giới trên bộ với nước láng giềng nên thủ tục này chủ yếu phục vụ công dân thuộc diện trên đang sinh sống, công tác tại các tỉnh biên giới; khi có nhu cầu, liên hệ Phòng Quản lý xuất nhập cảnh nơi cư trú để được hướng dẫn cụ thể.</p>
-        </details>
-      </article>
+        </details></div>
+      </details>
 
       <div class="tbl-wrap" style="margin-top:8px">
         <table>
-          <caption><svg class="ic sm" style="color:var(--green)"><use href="#i-money"/></svg> Lệ phí (Thông tư 25/2021/TT-BTC, được sửa đổi, bổ sung)</caption>
+          <caption><svg class="ic sm" style="color:var(--green-700)"><use href="#i-money"/></svg> Lệ phí (Thông tư 25/2021/TT-BTC, được sửa đổi, bổ sung)</caption>
           <thead><tr><th>Khoản thu</th><th style="width:26%">Mức thu gốc</th><th style="width:30%">Mức đang áp dụng đến hết 31/12/2026*</th></tr></thead>
           <tbody>
-            <tr><td>Cấp mới hộ chiếu (gồm cả hộ chiếu có gắn chíp và không gắn chíp)</td><td>200.000 đồng/lần cấp</td><td class="fine" style="color:var(--green)">100.000 đồng/lần cấp</td></tr>
-            <tr><td>Cấp lại hộ chiếu do bị hư hỏng hoặc bị mất</td><td>400.000 đồng/lần cấp</td><td class="fine" style="color:var(--green)">200.000 đồng/lần cấp</td></tr>
-            <tr><td>Cấp giấy thông hành (biên giới Việt Nam — Campuchia; Việt Nam — Lào; Việt Nam — Trung Quốc và giấy thông hành xuất, nhập cảnh vùng biên giới)</td><td>50.000 đồng/lần cấp</td><td class="fine" style="color:var(--green)">25.000 đồng/lần cấp</td></tr>
-            <tr><td>Cấp giấy xác nhận yếu tố nhân sự (phục vụ cấp hộ chiếu ở nước ngoài)</td><td>100.000 đồng/lần cấp</td><td class="fine" style="color:var(--green)">50.000 đồng/lần cấp</td></tr>
+            <tr><td>Cấp mới hộ chiếu (gồm cả hộ chiếu có gắn chíp và không gắn chíp)</td><td>200.000 đồng/lần cấp</td><td class="fine" style="color:var(--green-700)">100.000 đồng/lần cấp</td></tr>
+            <tr><td>Cấp lại hộ chiếu do bị hư hỏng hoặc bị mất</td><td>400.000 đồng/lần cấp</td><td class="fine" style="color:var(--green-700)">200.000 đồng/lần cấp</td></tr>
+            <tr><td>Cấp giấy thông hành (biên giới Việt Nam — Campuchia; Việt Nam — Lào; Việt Nam — Trung Quốc và giấy thông hành xuất, nhập cảnh vùng biên giới)</td><td>50.000 đồng/lần cấp</td><td class="fine" style="color:var(--green-700)">25.000 đồng/lần cấp</td></tr>
+            <tr><td>Cấp giấy xác nhận yếu tố nhân sự (phục vụ cấp hộ chiếu ở nước ngoài)</td><td>100.000 đồng/lần cấp</td><td class="fine" style="color:var(--green-700)">50.000 đồng/lần cấp</td></tr>
           </tbody>
         </table>
       </div>
@@ -828,9 +961,9 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section" id="dieu-kien">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><span class="num">04</span> Chưa cấp giấy tờ · Tạm hoãn xuất cảnh · Điều 21, 22, 36, 37, 38 Luật số 49/2019/QH14</span>
+        <span class="tag"><span class="num">04</span> Điều kiện và tạm hoãn xuất cảnh</span>
         <h2>Trường hợp chưa được cấp giấy tờ và bị tạm hoãn xuất cảnh</h2>
-        <p>Tạm hoãn xuất cảnh là việc dừng, không được xuất cảnh có thời hạn đối với công dân Việt Nam. Trước mỗi chuyến đi, công dân nên tự kiểm tra nghĩa vụ thuế, thi hành án, quyết định xử phạt chưa chấp hành… để tránh bị dừng xuất cảnh ngay tại cửa khẩu.</p>
+        <p>Tạm hoãn xuất cảnh là việc dừng, không được xuất cảnh có thời hạn đối với công dân Việt Nam. Trước mỗi chuyến đi, công dân nên tự kiểm tra nghĩa vụ thuế, thi hành án, quyết định xử phạt chưa chấp hành… để tránh bị dừng xuất cảnh ngay tại cửa khẩu. Căn cứ <b>Điều 21, 22, 36, 37 và 38 Luật số 49/2019/QH14</b>.</p>
       </div>
       <div class="alert red">
         <h3><svg class="ic sm"><use href="#i-ban"/></svg> 03 trường hợp chưa cấp giấy tờ xuất nhập cảnh (Điều 21)</h3>
@@ -840,7 +973,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
           <li>Trường hợp vì <b>lý do quốc phòng, an ninh</b> theo quyết định của Bộ trưởng Bộ Quốc phòng, Bộ trưởng Bộ Công an.</li>
         </ol>
       </div>
-      <h3 style="margin:28px 0 14px;font-size:20px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--red)"><use href="#i-clock"/></svg> 09 trường hợp bị tạm hoãn xuất cảnh (Điều 36)</h3>
+      <h3 style="margin:28px 0 14px;font-size:20px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--level-4)"><use href="#i-clock"/></svg> 09 trường hợp bị tạm hoãn xuất cảnh (Điều 36)</h3>
       <div class="cards c3">
         <div class="card"><span class="pill red">Khoản 1</span><h3 style="margin-top:6px">Liên quan tố tụng hình sự</h3><p>Bị can, bị cáo; người bị tố giác, người bị kiến nghị khởi tố mà qua kiểm tra, xác minh có căn cứ xác định người đó nghi thực hiện tội phạm và xét thấy cần ngăn chặn ngay việc trốn hoặc tiêu hủy chứng cứ theo Bộ luật Tố tụng hình sự.</p></div>
         <div class="card"><span class="pill red">Khoản 2</span><h3 style="margin-top:6px">Đang trong thời gian liên quan án phạt</h3><p>Người được hoãn chấp hành án phạt tù, tạm đình chỉ chấp hành án phạt tù, tha tù trước thời hạn có điều kiện trong thời gian thử thách, hưởng án treo trong thời gian thử thách, chấp hành án cải tạo không giam giữ trong thời gian chấp hành án.</p></div>
@@ -853,7 +986,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
         <div class="card"><span class="pill red">Khoản 9</span><h3 style="margin-top:6px">Ảnh hưởng đến quốc phòng, an ninh</h3><p>Người mà cơ quan chức năng có căn cứ cho rằng việc xuất cảnh của họ ảnh hưởng đến quốc phòng, an ninh.</p></div>
       </div>
       <div class="card" style="margin-top:16px">
-        <h3><svg class="ic sm" style="color:var(--green)"><use href="#i-clock"/></svg> Thời hạn tạm hoãn xuất cảnh (Điều 38)</h3>
+        <h3><svg class="ic sm" style="color:var(--green-700)"><use href="#i-clock"/></svg> Thời hạn tạm hoãn xuất cảnh (Điều 38)</h3>
         <ul>
           <li>Trường hợp khoản 1 Điều 36: theo quy định của Bộ luật Tố tụng hình sự;</li>
           <li>Trường hợp khoản 2, 3, 4, 5, 6 Điều 36: kết thúc khi người vi phạm, người có nghĩa vụ <b>chấp hành xong</b> bản án hoặc quyết định của cơ quan, người có thẩm quyền;</li>
@@ -870,9 +1003,9 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section section-white" id="hanh-vi-cam">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><span class="num">05</span> Điều 4 Luật số 49/2019/QH14</span>
+        <span class="tag"><span class="num">05</span> Hành vi bị nghiêm cấm</span>
         <h2>11 hành vi bị nghiêm cấm trong lĩnh vực xuất cảnh, nhập cảnh</h2>
-        <p>Mọi hành vi vi phạm phải được phát hiện, xử lý kịp thời, nghiêm minh. Người thực hiện hành vi bị nghiêm cấm còn có thể bị chưa cấp giấy tờ xuất nhập cảnh, thu hồi — hủy giá trị sử dụng hộ chiếu đã cấp.</p>
+        <p>Mọi hành vi vi phạm phải được phát hiện, xử lý kịp thời, nghiêm minh. Người thực hiện hành vi bị nghiêm cấm còn có thể bị chưa cấp giấy tờ xuất nhập cảnh, thu hồi — hủy giá trị sử dụng hộ chiếu đã cấp. Danh mục tại <b>Điều 4 Luật số 49/2019/QH14</b>.</p>
       </div>
       <div class="cards c2">
         <div class="card"><ol class="num">
@@ -902,63 +1035,68 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section" id="phap-ly">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><span class="num">06</span> Pháp lý · Điều 21 Nghị định số 282/2025/NĐ-CP (hiệu lực 15/12/2025, thay thế NĐ 144/2021/NĐ-CP)</span>
+        <span class="tag"><span class="num">06</span> Xử phạt vi phạm hành chính</span>
         <h2>Toàn bộ hành vi vi phạm và mức xử phạt hành chính</h2>
-        <p>Bảng dưới đây tra cứu theo từng hành vi. Mức phạt là mức áp dụng đối với <b>cá nhân</b>; đối với <b>tổ chức</b> có cùng hành vi vi phạm, mức phạt tiền <b>gấp 02 lần</b> mức phạt đối với cá nhân (Điều 5 NĐ 282/2025). Thời hiệu xử phạt là <b>01 năm</b> (Điều 6 NĐ 282/2025). Trong văn bản gốc, các loại giấy tờ được liệt kê đầy đủ (hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác theo điều ước quốc tế, thẻ ABTC) — trang này giữ nguyên nội dung hành vi, chỉ trình bày gọn.</p>
+        <p>Toàn bộ hành vi tại <b>Điều 21 Nghị định số 282/2025/NĐ-CP</b> (hiệu lực 15/12/2025, thay thế Nghị định 144/2021/NĐ-CP). Bảng dưới đây tra cứu theo từng hành vi. Mức phạt là mức áp dụng đối với <b>cá nhân</b>; đối với <b>tổ chức</b> có cùng hành vi vi phạm, mức phạt tiền <b>gấp 02 lần</b> mức phạt đối với cá nhân (Điều 5 NĐ 282/2025). Thời hiệu xử phạt là <b>01 năm</b> (Điều 6 NĐ 282/2025). Trong văn bản gốc, các loại giấy tờ được liệt kê đầy đủ (hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác theo điều ước quốc tế, thẻ ABTC) — trang này giữ nguyên nội dung hành vi, chỉ trình bày gọn.</p>
+      </div>
+      <div class="scope-tabs" role="tablist" aria-label="Nhóm đối tượng áp dụng">
+        <button type="button" role="tab" data-group="cd" aria-selected="true">Áp dụng cho công dân Việt Nam<small>16 hành vi, gồm cả hành vi áp dụng chung cho mọi người</small></button>
+        <button type="button" role="tab" data-group="nn" aria-selected="false">Người nước ngoài · cơ sở lưu trú · tổ chức<small>21 hành vi, cần biết khi mời, bảo lãnh hoặc cho người nước ngoài thuê trọ</small></button>
+        <button type="button" role="tab" data-group="" aria-selected="false">Toàn bộ Điều 21<small>37 hành vi</small></button>
+      </div>
+      <div class="sev-legend" aria-label="Thang mức độ xử phạt">
+        <div class="s s0"><b>Cảnh cáo</b><span>Không phạt tiền</span></div>
+        <div class="s s1"><b>Đến 2 triệu</b><span>Mức nhẹ</span></div>
+        <div class="s s2"><b>3 – 10 triệu</b><span>Mức trung bình</span></div>
+        <div class="s s3"><b>10 – 25 triệu</b><span>Mức nặng</span></div>
+        <div class="s s4"><b>25 – 40 triệu</b><span>Trần với cá nhân</span></div>
+        <a class="s s5" href="#hinh-su"><b>Hình sự</b><span>Xem mục Trách nhiệm hình sự</span></a>
       </div>
       <div class="searchbar">
-        <input type="search" id="fine-search" placeholder="Tìm hành vi… ví dụ: qua lại biên giới, cho thuê hộ chiếu, giả, quá hạn, khai báo tạm trú" aria-label="Tìm hành vi vi phạm">
-        <select id="fine-scope" aria-label="Lọc theo đối tượng">
-          <option value="">Tất cả đối tượng</option>
-          <option value="Công dân Việt Nam">Công dân Việt Nam</option>
-          <option value="Chung">Áp dụng chung</option>
-          <option value="Người nước ngoài">Người nước ngoài</option>
-          <option value="Cơ sở lưu trú">Cơ sở lưu trú</option>
-          <option value="Tổ chức">Tổ chức, cá nhân khác</option>
-        </select>
+        <input type="search" id="fine-search" placeholder="Tìm hành vi… ví dụ: qua lại biên giới, cho thuê hộ chiếu, giấy tờ giả, quá hạn" aria-label="Tìm hành vi vi phạm">
       </div>
       <p class="search-status" id="fine-status"></p>
       <div class="tbl-wrap">
         <table id="fine-table">
           <thead><tr><th style="width:11%">Căn cứ</th><th style="width:16%">Đối tượng áp dụng</th><th>Hành vi vi phạm</th><th style="width:18%">Mức phạt tiền (cá nhân)</th></tr></thead>
           <tbody>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 1<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đi lại trên lãnh thổ Việt Nam mà không mang theo hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam hoặc thẻ ABTC.</td><td class="fine">Cảnh cáo hoặc 300.000 – 500.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 2a<br><small>Điều 21</small></td><td>Chung</td><td>Không thông báo theo quy định cho cơ quan có thẩm quyền về việc mất hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, thẻ ABTC, giấy tờ XNC khác theo điều ước quốc tế còn giá trị sử dụng.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 2b<br><small>Điều 21</small></td><td>Chung</td><td>Khai không đúng sự thật để được cấp, gia hạn, khôi phục giá trị sử dụng hoặc trình báo mất hộ chiếu, giấy thông hành; khai không đúng sự thật để được cấp giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 2c<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đi vào khu vực Nhà nước quy định cần có giấy phép mà không có giấy phép hoặc đi lại quá phạm vi, thời hạn được phép.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 2d<br><small>Điều 21</small></td><td>Chung</td><td>Không xuất trình giấy tờ XNC khi cơ quan, người có thẩm quyền của Việt Nam yêu cầu; không chấp hành yêu cầu về khám người, phương tiện vận tải, đồ vật, nơi cất giấu tang vật, phương tiện vi phạm hành chính.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 2đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn dưới 16 ngày mà không được cơ quan có thẩm quyền cho phép.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Công dân Việt Nam"><td class="ref">Khoản 2e<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng giấy tờ xuất nhập cảnh hết thời hạn sử dụng hoặc không có giấy tờ xuất nhập cảnh để nhập cảnh Việt Nam.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 2g<br><small>Điều 21</small></td><td>Chung</td><td>Chiếm đoạt, chiếm giữ trái phép hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 3a<br><small>Điều 21</small></td><td>Chung</td><td>Hủy hoại, tẩy xóa, sửa chữa làm sai lệch nội dung, hình thức hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 3b<br><small>Điều 21</small></td><td>Chung</td><td>Tặng, cho, thuê, cho thuê, cầm cố, nhận cầm cố hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 3c<br><small>Điều 21</small></td><td>Chung</td><td>Cho người khác sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, giấy tờ XNC khác hoặc thẻ ABTC để thực hiện hành vi trái quy định của pháp luật.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 3d<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác để nhập cảnh, xuất cảnh, quá cảnh, cư trú hoặc để thực hiện hành vi vi phạm pháp luật khác.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 3đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đã được cấp thẻ thường trú mà thay đổi địa chỉ nhưng không khai báo để cấp lại; người nước ngoài nhập cảnh vào khu kinh tế cửa khẩu, khu kinh tế ven biển theo diện miễn thị thực đi đến địa điểm khác của Việt Nam mà không có thị thực Việt Nam.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-scope="Cơ sở lưu trú Người nước ngoài"><td class="ref">Khoản 3e<br><small>Điều 21</small></td><td>Cơ sở lưu trú / Người nước ngoài</td><td>Cơ sở lưu trú không khai báo tạm trú theo quy định từ 01 đến 03 người nước ngoài hoặc tạo tài khoản bằng thông tin sai sự thật để khai báo tạm trú trên môi trường điện tử; người nước ngoài không xuất trình hộ chiếu/giấy tờ đi lại, giấy tờ cư trú cho cơ sở lưu trú để khai báo tạm trú.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 4a<br><small>Điều 21</small></td><td>Chung</td><td>Qua lại biên giới quốc gia mà không làm thủ tục xuất cảnh, nhập cảnh theo quy định của pháp luật.</td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 4b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn từ 16 ngày đến dưới 30 ngày mà không được phép.</td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 5a<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu giả, giấy thông hành giả, giấy tờ có giá trị đi lại quốc tế giả, giấy tờ cấp cho người nước ngoài giả, tem AB giả, giấy tờ XNC khác theo điều ước quốc tế giả, kiểm chứng xuất cảnh, nhập cảnh giả, chứng nhận tạm trú giả hoặc thẻ ABTC giả.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 5b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 30 ngày đến dưới 60 ngày mà không được phép.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
-<tr data-scope="Cơ sở lưu trú"><td class="ref">Khoản 5c<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 04 đến 08 người nước ngoài.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 6a<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh, hành nghề hoặc có hoạt động khác tại Việt Nam mà không được phép của cơ quan có thẩm quyền của Việt Nam.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 6b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 60 ngày đến dưới 90 ngày mà không được phép.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 6c<br><small>Điều 21</small></td><td>Chung</td><td>Mua, bán hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác theo điều ước quốc tế hoặc thẻ ABTC.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-scope="Công dân Việt Nam"><td class="ref">Khoản 6d<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng thị thực nước ngoài giả hoặc giấy tờ xác nhận, chứng minh được nước đến cho nhập cảnh giả.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-scope="Cơ sở lưu trú"><td class="ref">Khoản 6đ<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 09 người nước ngoài trở lên.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-scope="Tổ chức Chung"><td class="ref">Khoản 7a<br><small>Điều 21</small></td><td>Tổ chức, cá nhân bảo lãnh</td><td>Làm thủ tục mời, bảo lãnh cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam nhưng không thực hiện đúng trách nhiệm theo quy định hoặc khai không đúng sự thật khi làm thủ tục mời, bảo lãnh.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 7b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh hoạt động không đúng mục đích, chương trình đã đề nghị xin cấp thị thực, thẻ tạm trú hoặc gia hạn tạm trú.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 7c<br><small>Điều 21</small></td><td>Chung</td><td>Giả mạo hồ sơ, giấy tờ để được cấp hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 7d<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 90 ngày đến dưới 180 ngày mà không được phép.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-scope="Tổ chức"><td class="ref">Khoản 7đ<br><small>Điều 21</small></td><td>Tổ chức, cá nhân</td><td>Sử dụng lao động là người nước ngoài, tổ chức chương trình du lịch cho người nước ngoài hoặc cho người nước ngoài tạm trú khi người nước ngoài cư trú không hợp pháp tại Việt Nam hoặc phát hiện dấu hiệu vi phạm pháp luật về XNC, cư trú mà không thông báo cho cơ quan có thẩm quyền.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 8<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 180 ngày đến dưới 01 năm mà không được phép.</td><td class="fine">25.000.000 – 30.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 9a<br><small>Điều 21</small></td><td>Chung</td><td>Vào, ở lại đại sứ quán, lãnh sự quán, cơ quan đại diện ngoại giao, cơ quan lãnh sự hoặc trụ sở cơ quan, tổ chức quốc tế đóng tại Việt Nam mà không được phép của cơ quan, tổ chức đó.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 9b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài cư trú tại các khu vực cấm người nước ngoài cư trú.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-scope="Tổ chức"><td class="ref">Khoản 9c<br><small>Điều 21</small></td><td>Chủ / người quản lý / điều khiển phương tiện</td><td>Chủ phương tiện hoặc người quản lý phương tiện hoặc người điều khiển phương tiện vận chuyển người qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-scope="Chung"><td class="ref">Khoản 9d<br><small>Điều 21</small></td><td>Chung</td><td>Tổ chức, môi giới cho người khác xuất cảnh, nhập cảnh hoặc ở lại Việt Nam trái phép nhưng chưa đến mức truy cứu TNHS; tổ chức, môi giới, giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác ở lại nước ngoài hoặc qua lại biên giới quốc gia trái phép nhưng chưa đến mức truy cứu TNHS; giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác xuất cảnh, nhập cảnh, ở lại Việt Nam trái phép.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 9đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài không chấp hành quyết định trục xuất hoặc quyết định buộc xuất cảnh hoặc yêu cầu xuất cảnh của cơ quan chức năng, tiếp tục cư trú tại Việt Nam.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 9e<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 01 năm trở lên mà không được phép.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-scope="Người nước ngoài"><td class="ref">Khoản 9g<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định sau đó ở lại Việt Nam nhưng không được cấp giấy tờ có giá trị cư trú tại Việt Nam.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="0" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 1<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đi lại trên lãnh thổ Việt Nam mà không mang theo hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam hoặc thẻ ABTC.</td><td class="fine">Cảnh cáo hoặc 300.000 – 500.000 đ</td></tr>
+<tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2a<br><small>Điều 21</small></td><td>Chung</td><td>Không thông báo theo quy định cho cơ quan có thẩm quyền về việc mất hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, thẻ ABTC, giấy tờ XNC khác theo điều ước quốc tế còn giá trị sử dụng.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2b<br><small>Điều 21</small></td><td>Chung</td><td>Khai không đúng sự thật để được cấp, gia hạn, khôi phục giá trị sử dụng hoặc trình báo mất hộ chiếu, giấy thông hành; khai không đúng sự thật để được cấp giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 2c<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đi vào khu vực Nhà nước quy định cần có giấy phép mà không có giấy phép hoặc đi lại quá phạm vi, thời hạn được phép.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2d<br><small>Điều 21</small></td><td>Chung</td><td>Không xuất trình giấy tờ XNC khi cơ quan, người có thẩm quyền của Việt Nam yêu cầu; không chấp hành yêu cầu về khám người, phương tiện vận tải, đồ vật, nơi cất giấu tang vật, phương tiện vi phạm hành chính.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 2đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn dưới 16 ngày mà không được cơ quan có thẩm quyền cho phép.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="cd" data-scope="Công dân Việt Nam"><td class="ref">Khoản 2e<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng giấy tờ xuất nhập cảnh hết thời hạn sử dụng hoặc không có giấy tờ xuất nhập cảnh để nhập cảnh Việt Nam.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2g<br><small>Điều 21</small></td><td>Chung</td><td>Chiếm đoạt, chiếm giữ trái phép hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3a<br><small>Điều 21</small></td><td>Chung</td><td>Hủy hoại, tẩy xóa, sửa chữa làm sai lệch nội dung, hình thức hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3b<br><small>Điều 21</small></td><td>Chung</td><td>Tặng, cho, thuê, cho thuê, cầm cố, nhận cầm cố hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3c<br><small>Điều 21</small></td><td>Chung</td><td>Cho người khác sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, giấy tờ XNC khác hoặc thẻ ABTC để thực hiện hành vi trái quy định của pháp luật.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3d<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác để nhập cảnh, xuất cảnh, quá cảnh, cư trú hoặc để thực hiện hành vi vi phạm pháp luật khác.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 3đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đã được cấp thẻ thường trú mà thay đổi địa chỉ nhưng không khai báo để cấp lại; người nước ngoài nhập cảnh vào khu kinh tế cửa khẩu, khu kinh tế ven biển theo diện miễn thị thực đi đến địa điểm khác của Việt Nam mà không có thị thực Việt Nam.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="nn" data-scope="Cơ sở lưu trú Người nước ngoài"><td class="ref">Khoản 3e<br><small>Điều 21</small></td><td>Cơ sở lưu trú / Người nước ngoài</td><td>Cơ sở lưu trú không khai báo tạm trú theo quy định từ 01 đến 03 người nước ngoài hoặc tạo tài khoản bằng thông tin sai sự thật để khai báo tạm trú trên môi trường điện tử; người nước ngoài không xuất trình hộ chiếu/giấy tờ đi lại, giấy tờ cư trú cho cơ sở lưu trú để khai báo tạm trú.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 4a<br><small>Điều 21</small></td><td>Chung</td><td>Qua lại biên giới quốc gia mà không làm thủ tục xuất cảnh, nhập cảnh theo quy định của pháp luật.</td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
+<tr data-level="2" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 4b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn từ 16 ngày đến dưới 30 ngày mà không được phép.</td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 5a<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu giả, giấy thông hành giả, giấy tờ có giá trị đi lại quốc tế giả, giấy tờ cấp cho người nước ngoài giả, tem AB giả, giấy tờ XNC khác theo điều ước quốc tế giả, kiểm chứng xuất cảnh, nhập cảnh giả, chứng nhận tạm trú giả hoặc thẻ ABTC giả.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 5b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 30 ngày đến dưới 60 ngày mà không được phép.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Cơ sở lưu trú"><td class="ref">Khoản 5c<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 04 đến 08 người nước ngoài.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 6a<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh, hành nghề hoặc có hoạt động khác tại Việt Nam mà không được phép của cơ quan có thẩm quyền của Việt Nam.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 6b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 60 ngày đến dưới 90 ngày mà không được phép.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 6c<br><small>Điều 21</small></td><td>Chung</td><td>Mua, bán hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác theo điều ước quốc tế hoặc thẻ ABTC.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Công dân Việt Nam"><td class="ref">Khoản 6d<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng thị thực nước ngoài giả hoặc giấy tờ xác nhận, chứng minh được nước đến cho nhập cảnh giả.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Cơ sở lưu trú"><td class="ref">Khoản 6đ<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 09 người nước ngoài trở lên.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Tổ chức Chung"><td class="ref">Khoản 7a<br><small>Điều 21</small></td><td>Tổ chức, cá nhân bảo lãnh</td><td>Làm thủ tục mời, bảo lãnh cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam nhưng không thực hiện đúng trách nhiệm theo quy định hoặc khai không đúng sự thật khi làm thủ tục mời, bảo lãnh.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 7b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh hoạt động không đúng mục đích, chương trình đã đề nghị xin cấp thị thực, thẻ tạm trú hoặc gia hạn tạm trú.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 7c<br><small>Điều 21</small></td><td>Chung</td><td>Giả mạo hồ sơ, giấy tờ để được cấp hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 7d<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 90 ngày đến dưới 180 ngày mà không được phép.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Tổ chức"><td class="ref">Khoản 7đ<br><small>Điều 21</small></td><td>Tổ chức, cá nhân</td><td>Sử dụng lao động là người nước ngoài, tổ chức chương trình du lịch cho người nước ngoài hoặc cho người nước ngoài tạm trú khi người nước ngoài cư trú không hợp pháp tại Việt Nam hoặc phát hiện dấu hiệu vi phạm pháp luật về XNC, cư trú mà không thông báo cho cơ quan có thẩm quyền.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 8<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 180 ngày đến dưới 01 năm mà không được phép.</td><td class="fine">25.000.000 – 30.000.000 đ</td></tr>
+<tr data-level="4" data-group="cd" data-scope="Chung"><td class="ref">Khoản 9a<br><small>Điều 21</small></td><td>Chung</td><td>Vào, ở lại đại sứ quán, lãnh sự quán, cơ quan đại diện ngoại giao, cơ quan lãnh sự hoặc trụ sở cơ quan, tổ chức quốc tế đóng tại Việt Nam mà không được phép của cơ quan, tổ chức đó.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài cư trú tại các khu vực cấm người nước ngoài cư trú.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Tổ chức"><td class="ref">Khoản 9c<br><small>Điều 21</small></td><td>Chủ / người quản lý / điều khiển phương tiện</td><td>Chủ phương tiện hoặc người quản lý phương tiện hoặc người điều khiển phương tiện vận chuyển người qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="cd" data-scope="Chung"><td class="ref">Khoản 9d<br><small>Điều 21</small></td><td>Chung</td><td>Tổ chức, môi giới cho người khác xuất cảnh, nhập cảnh hoặc ở lại Việt Nam trái phép nhưng chưa đến mức truy cứu TNHS; tổ chức, môi giới, giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác ở lại nước ngoài hoặc qua lại biên giới quốc gia trái phép nhưng chưa đến mức truy cứu TNHS; giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác xuất cảnh, nhập cảnh, ở lại Việt Nam trái phép.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài không chấp hành quyết định trục xuất hoặc quyết định buộc xuất cảnh hoặc yêu cầu xuất cảnh của cơ quan chức năng, tiếp tục cư trú tại Việt Nam.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9e<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 01 năm trở lên mà không được phép.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9g<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định sau đó ở lại Việt Nam nhưng không được cấp giấy tờ có giá trị cư trú tại Việt Nam.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
           </tbody>
         </table>
       </div>
@@ -966,14 +1104,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
 
       <div class="cards c2" style="margin-top:14px">
         <div class="card">
-          <h3><svg class="ic sm" style="color:var(--green)"><use href="#i-doc"/></svg> Hình thức xử phạt bổ sung (khoản 11 Điều 21)</h3>
+          <h3><svg class="ic sm" style="color:var(--green-700)"><use href="#i-doc"/></svg> Hình thức xử phạt bổ sung (khoản 11 Điều 21)</h3>
           <ul>
             <li><b>Tịch thu tang vật, phương tiện vi phạm hành chính</b> đối với các hành vi: khai không đúng sự thật để được cấp giấy tờ (điểm b khoản 2); hủy hoại, tẩy xóa, sửa chữa — tặng, cho, thuê, cầm cố — cho người khác sử dụng — sử dụng giấy tờ của người khác (điểm a, b, c, d khoản 3); sử dụng giấy tờ giả (điểm a khoản 5); người nước ngoài hoạt động không phép — mua, bán giấy tờ — công dân Việt Nam dùng thị thực nước ngoài giả (điểm a, c, d khoản 6); người nước ngoài hoạt động sai mục đích — giả mạo hồ sơ để được cấp giấy tờ (điểm b, c khoản 7); chủ/quản lý/điều khiển phương tiện chở người qua biên giới không làm thủ tục nhập cảnh (điểm c khoản 9);</li>
             <li><b>Trục xuất:</b> căn cứ tính chất, mức độ, hậu quả vi phạm, đối tượng vi phạm và tình tiết tăng nặng, giảm nhẹ để quyết định áp dụng đối với <b>người nước ngoài</b> vi phạm quy định tại các khoản 4, 5, 6, 7, 8 và 9 Điều 21.</li>
           </ul>
         </div>
         <div class="card">
-          <h3><svg class="ic sm" style="color:var(--green)"><use href="#i-refresh"/></svg> Biện pháp khắc phục hậu quả (khoản 12 Điều 21)</h3>
+          <h3><svg class="ic sm" style="color:var(--green-700)"><use href="#i-refresh"/></svg> Biện pháp khắc phục hậu quả (khoản 12 Điều 21)</h3>
           <ul>
             <li><b>Buộc nộp lại số lợi bất hợp pháp</b> có được do thực hiện hành vi vi phạm quy định tại: điểm b khoản 3 (tặng, cho, thuê, cho thuê, cầm cố, nhận cầm cố giấy tờ); điểm a và c khoản 6 (người nước ngoài hoạt động không phép; mua, bán giấy tờ); điểm c và d khoản 9 (phương tiện chở người qua biên giới không làm thủ tục nhập cảnh; tổ chức, môi giới, giúp sức… cho người khác xuất nhập cảnh, ở lại trái phép);</li>
             <li>Ngoài ra, giấy tờ XNC được cấp trên cơ sở hồ sơ giả mạo, khai sai sự thật bị <b>thu hồi, hủy giá trị sử dụng</b> theo Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam.</li>
@@ -995,7 +1133,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section section-white" id="hinh-su">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><span class="num">07</span> Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2017, 2025)</span>
+        <span class="tag"><span class="num">07</span> Trách nhiệm hình sự</span>
         <h2>Trách nhiệm hình sự về xuất cảnh, nhập cảnh trái phép</h2>
         <p>Các tội danh trực tiếp liên quan đến xuất cảnh, nhập cảnh của công dân Việt Nam tập trung tại Điều 347 — 350, cùng tội làm giả, sử dụng giấy tờ giả (Điều 341) và các tội danh khác thường bị lợi dụng qua đường xuất nhập cảnh trái phép.</p>
       </div>
@@ -1102,14 +1240,14 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
         <p>Các địa chỉ chính thống để nộp hồ sơ trực tuyến, tra cứu văn bản gốc và tìm hiểu thêm. Đề nghị chỉ truy cập các cổng có tên miền <b>.gov.vn</b>; không cung cấp thông tin cá nhân, hộ chiếu, tài khoản VNeID trên các trang trung gian, quảng cáo “làm hộ chiếu nhanh”.</p>
       </div>
 
-      <h3 style="margin:4px 0 12px;font-size:18px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--gold)"><use href="#i-globe"/></svg> Cổng dịch vụ công &amp; nộp hồ sơ trực tuyến</h3>
+      <h3 style="margin:4px 0 12px;font-size:18px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--gold-500)"><use href="#i-globe"/></svg> Cổng dịch vụ công &amp; nộp hồ sơ trực tuyến</h3>
       <div class="cards c3">
         <a class="link-card" href="https://dichvucong.bocongan.gov.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm"><svg class="ic"><use href="#i-shield"/></svg></span><div><h3>Cổng DVC Bộ Công an <svg class="ic"><use href="#i-ext"/></svg></h3><p>Nộp hồ sơ cấp hộ chiếu phổ thông, trình báo mất, khôi phục giá trị sử dụng; theo dõi trạng thái hồ sơ.</p><span class="host">dichvucong.bocongan.gov.vn</span></div></a>
         <a class="link-card" href="https://dichvucong.gov.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm"><svg class="ic"><use href="#i-globe"/></svg></span><div><h3>Cổng DVC quốc gia <svg class="ic"><use href="#i-ext"/></svg></h3><p>Cổng dịch vụ công quốc gia — tra cứu, nộp và thanh toán lệ phí thủ tục hành chính trực tuyến.</p><span class="host">dichvucong.gov.vn</span></div></a>
         <a class="link-card" href="https://vneid.gov.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm"><svg class="ic"><use href="#i-id"/></svg></span><div><h3>Định danh điện tử VNeID <svg class="ic"><use href="#i-ext"/></svg></h3><p>Tài khoản định danh điện tử mức độ 2 — điều kiện để đăng nhập và nộp hồ sơ trực tuyến.</p><span class="host">vneid.gov.vn</span></div></a>
       </div>
 
-      <h3 style="margin:26px 0 12px;font-size:18px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--gold)"><use href="#i-pin"/></svg> Cơ quan quản lý &amp; bảo hộ công dân</h3>
+      <h3 style="margin:26px 0 12px;font-size:18px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--gold-500)"><use href="#i-pin"/></svg> Cơ quan quản lý &amp; bảo hộ công dân</h3>
       <div class="cards c3">
         <a class="link-card" href="https://xuatnhapcanh.gov.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm navy"><svg class="ic"><use href="#i-passport"/></svg></span><div><h3>Cục Quản lý xuất nhập cảnh <svg class="ic"><use href="#i-ext"/></svg></h3><p>Cổng thông tin của Cục Quản lý xuất nhập cảnh, Bộ Công an — hướng dẫn thủ tục, biểu mẫu, dịch vụ công.</p><span class="host">xuatnhapcanh.gov.vn</span></div></a>
         <a class="link-card" href="https://bocongan.gov.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm navy"><svg class="ic"><use href="#i-shield"/></svg></span><div><h3>Cổng TTĐT Bộ Công an <svg class="ic"><use href="#i-ext"/></svg></h3><p>Thông tin chỉ đạo, cảnh báo phương thức, thủ đoạn tội phạm và tin tức về công tác quản lý xuất nhập cảnh.</p><span class="host">bocongan.gov.vn</span></div></a>
@@ -1119,7 +1257,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
         <a class="link-card" href="https://evisa.xuatnhapcanh.gov.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm"><svg class="ic"><use href="#i-globe"/></svg></span><div><h3>Thị thực điện tử (e-visa) <svg class="ic"><use href="#i-ext"/></svg></h3><p>Trang cấp thị thực điện tử cho người nước ngoài — tham khảo khi mời, bảo lãnh thân nhân, đối tác vào Việt Nam.</p><span class="host">evisa.xuatnhapcanh.gov.vn</span></div></a>
       </div>
 
-      <h3 style="margin:26px 0 12px;font-size:18px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--gold)"><use href="#i-gavel"/></svg> Tra cứu văn bản pháp luật gốc</h3>
+      <h3 style="margin:26px 0 12px;font-size:18px;display:flex;align-items:center;gap:9px"><svg class="ic sm" style="color:var(--gold-500)"><use href="#i-gavel"/></svg> Tra cứu văn bản pháp luật gốc</h3>
       <div class="cards c2">
         <a class="link-card" href="https://vbpl.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm gold"><svg class="ic"><use href="#i-doc"/></svg></span><div><h3>CSDL quốc gia về pháp luật <svg class="ic"><use href="#i-ext"/></svg></h3><p>Tra cứu toàn văn Luật số 49/2019/QH14, Luật số 23/2023/QH15, Nghị định 282/2025/NĐ-CP, Bộ luật Hình sự và các văn bản liên quan.</p><span class="host">vbpl.vn</span></div></a>
         <a class="link-card" href="https://congbao.chinhphu.vn" target="_blank" rel="noopener noreferrer"><span class="ico-badge sm gold"><svg class="ic"><use href="#i-brief"/></svg></span><div><h3>Công báo Chính phủ <svg class="ic"><use href="#i-ext"/></svg></h3><p>Bản gốc văn bản quy phạm pháp luật đăng Công báo — đối chiếu khi áp dụng vào trường hợp cụ thể.</p><span class="host">congbao.chinhphu.vn</span></div></a>
@@ -1150,7 +1288,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
       </div>
 
       <form class="compose" id="contact-form">
-        <h3 style="margin:0 0 4px"><svg class="ic sm" style="color:var(--green)"><use href="#i-mail"/></svg> Soạn nội dung liên hệ / phản ánh</h3>
+        <h3 style="margin:0 0 4px"><svg class="ic sm" style="color:var(--green-700)"><use href="#i-mail"/></svg> Soạn nội dung liên hệ / phản ánh</h3>
         <p class="fee-note" style="margin:0 0 6px">Điền thông tin bên dưới, trang sẽ soạn sẵn nội dung để bạn sao chép và sử dụng khi gọi điện, gửi qua Cổng dịch vụ công hoặc kênh liên hệ của Công an tỉnh. Trang này không tự gửi dữ liệu đi nơi khác.</p>
         <label for="contact-name">Họ và tên</label>
         <input id="contact-name" autocomplete="name" placeholder="Ví dụ: Nguyễn Văn A">
@@ -1173,7 +1311,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   <section class="section section-white" id="nguon-phap-ly">
     <div class="wrap">
       <div class="section-head">
-        <span class="tag"><svg class="ic sm" style="color:var(--gold)"><use href="#i-gavel"/></svg> Căn cứ pháp lý</span>
+        <span class="tag"><svg class="ic sm" style="color:var(--gold-500)"><use href="#i-gavel"/></svg> Căn cứ pháp lý</span>
         <h2>Văn bản được sử dụng trong trang tuyên truyền</h2>
       </div>
       <div class="sources">
@@ -1199,7 +1337,7 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
       <img src="data:image/png;base64,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" alt="Biểu trưng Quản lý xuất nhập cảnh" width="300" height="299" decoding="async">
     </div>
     <p><b>PHÒNG QUẢN LÝ XUẤT NHẬP CẢNH — CÔNG AN TỈNH CÀ MAU</b></p>
-    <p>Trang thông tin tuyên truyền về quy định xuất cảnh, nhập cảnh và thủ tục hành chính đối với công dân Việt Nam.<br>Điện thoại liên hệ: <b style="color:var(--gold-soft)">0290 383 1877</b> &nbsp;•&nbsp; Khẩn cấp: 113 &nbsp;•&nbsp; Bảo hộ công dân ở nước ngoài: +84 981 84 84 84.</p>
+    <p>Trang thông tin tuyên truyền về quy định xuất cảnh, nhập cảnh và thủ tục hành chính đối với công dân Việt Nam.<br>Điện thoại liên hệ: <b style="color:var(--gold-300)">0290 383 1877</b> &nbsp;•&nbsp; Khẩn cấp: 113 &nbsp;•&nbsp; Bảo hộ công dân ở nước ngoài: +84 981 84 84 84.</p>
     <p class="motto">Xuất cảnh đúng luật — hành trình an toàn.</p>
     <p style="font-size:12.5px;opacity:.75;margin-top:8px">Mọi hành vi xuất cảnh, nhập cảnh trái phép đều bị xử lý nghiêm theo quy định của pháp luật. Nội dung cập nhật theo văn bản có hiệu lực tại tháng 10/2026.</p>
   </div>
@@ -1263,16 +1401,31 @@ mark{background:#ffe9a8;color:inherit;padding:0 2px;border-radius:3px}
   procInput?.addEventListener('input',filterProc);
 
   /* ---------- Tìm & lọc bảng xử phạt ---------- */
-  const fineInput=$('#fine-search'), fineScope=$('#fine-scope'), fineStatus=$('#fine-status'), fineRows=$$('#fine-table tbody tr');
+  const fineInput=$('#fine-search'), fineStatus=$('#fine-status'), fineRows=$$('#fine-table tbody tr');
+  const scopeTabs=$$('.scope-tabs button');
   const total = fineRows.length;
+  let group = 'cd';
+  const LABEL = {cd:'áp dụng cho công dân Việt Nam', nn:'về người nước ngoài, cơ sở lưu trú và tổ chức', '':'tại Điều 21'};
   const filterFine = () => {
-    const q=norm(fineInput.value), sc=fineScope.value; let n=0;
-    fineRows.forEach(r=>{ const hay=norm(r.textContent); const scope=r.dataset.scope||''; const okQ=!q||hay.includes(q); const okS=!sc||scope.includes(sc); const ok=okQ&&okS; r.classList.toggle('hidden',!ok); if(ok)n++; });
-    if(!q && !sc){ fineStatus.textContent = `Đang hiển thị toàn bộ ${total} hành vi vi phạm tại Điều 21 Nghị định 282/2025/NĐ-CP.`; }
-    else { fineStatus.textContent = n?`Tìm thấy ${n}/${total} hành vi phù hợp.`:'Không có hành vi phù hợp với từ khóa/bộ lọc. Hãy thử từ khóa khác hoặc gọi 0290 383 1877.'; }
+    if(!fineStatus) return;
+    const q = norm(fineInput.value); let n=0, shown=0;
+    fineRows.forEach(r=>{
+      const okG = !group || (r.dataset.group||'')===group;
+      if(okG) shown++;
+      const ok = okG && (!q || norm(r.textContent).includes(q));
+      r.classList.toggle('hidden', !ok); if(ok) n++;
+    });
+    fineStatus.textContent = q
+      ? (n ? `Tìm thấy ${n} hành vi phù hợp trong ${shown} hành vi ${LABEL[group]}.`
+           : 'Không có hành vi nào khớp từ khoá. Hãy thử từ khoá khác hoặc gọi 0290 383 1877 để được hướng dẫn.')
+      : `Đang hiển thị ${shown} hành vi ${LABEL[group]} (trên tổng số ${total} hành vi tại Điều 21).`;
   };
+  scopeTabs.forEach(b=>b.addEventListener('click',()=>{
+    group = b.dataset.group;
+    scopeTabs.forEach(x=>x.setAttribute('aria-selected', String(x===b)));
+    filterFine();
+  }));
   fineInput?.addEventListener('input',filterFine);
-  fineScope?.addEventListener('change',filterFine);
   if(fineStatus) filterFine();
 
   /* ---------- Soạn nội dung liên hệ ---------- */
