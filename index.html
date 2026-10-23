@@ -328,6 +328,15 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
 .to-top.show{display:inline-flex}
 @media(min-width:1120px){.to-top{bottom:24px}}
 
+
+.chetai{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.ct{font-size:11.5px;font-weight:650;padding:3px 9px;border-radius:5px;border:1px solid;line-height:1.45}
+.ct-tt{color:#8d6315;border-color:#e0cfa6;background:#fbf5e8}
+.ct-nl{color:#2f6f8f;border-color:#bcd6e3;background:#eef6fa}
+.ct-tx{color:#a8322a;border-color:#e8cbc8;background:#fcf0ef}
+.sotay-figs{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:26px}
+@media(min-width:760px){.sotay-figs{grid-template-columns:repeat(3,1fr)}}
+
 /* ---------- PRINT ---------- */
 @media print{
   .site-header,.section-toc,.reading-tools,.dock,.to-top,.hero-actions,.mobile-nav,.contact-form,.menu-toggle,.scope-tabs{display:none!important}
@@ -420,6 +429,7 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
       <a href="#thu-tuc">Thủ tục</a>
       <a href="#dieu-kien">Tạm hoãn</a>
       <a href="#phap-ly">Mức phạt</a>
+      <a href="#tham-quyen">Thẩm quyền</a>
       <a href="#hinh-su">Hình sự</a>
       <a href="#lien-ket">Liên kết</a>
       <a href="#lien-he">Liên hệ</a>
@@ -436,6 +446,7 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
     <a href="#dieu-kien"><svg class="icon sm"><use href="#i-ban"/></svg> Điều kiện · Tạm hoãn</a>
     <a href="#hanh-vi-cam"><svg class="icon sm"><use href="#i-alert"/></svg> Hành vi bị cấm</a>
     <a href="#phap-ly"><svg class="icon sm"><use href="#i-scale"/></svg> Xử phạt hành chính</a>
+    <a href="#tham-quyen"><svg class="icon sm"><use href="#i-gavel"/></svg> Thẩm quyền xử phạt</a>
     <a href="#hinh-su"><svg class="icon sm"><use href="#i-shield"/></svg> Trách nhiệm hình sự</a>
     <a href="#canh-bao"><svg class="icon sm"><use href="#i-mega"/></svg> Cảnh báo rủi ro</a>
     <a href="#lien-ket"><svg class="icon sm"><use href="#i-link"/></svg> Liên kết hữu ích</a>
@@ -454,6 +465,7 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
       <li><a href="#dieu-kien">Điều kiện · Tạm hoãn</a></li>
       <li><a href="#hanh-vi-cam">Hành vi bị cấm</a></li>
       <li><a href="#phap-ly">Xử phạt hành chính</a></li>
+      <li><a href="#tham-quyen">Thẩm quyền xử phạt</a></li>
       <li><a href="#hinh-su">Trách nhiệm hình sự</a></li>
       <li><a href="#canh-bao">Cảnh báo rủi ro</a></li>
       <li><a href="#lien-ket">Liên kết hữu ích</a></li>
@@ -922,6 +934,7 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
       <div class="searchbar">
         <input type="search" id="fine-search" placeholder="Tìm hành vi… ví dụ: qua lại biên giới, cho thuê hộ chiếu, giấy tờ giả, quá hạn" aria-label="Tìm hành vi vi phạm">
       </div>
+      <p class="small-source" style="margin:-4px 0 14px">Mỗi hành vi có thể kèm <span class="ct ct-tt">Tịch thu tang vật</span> <span class="ct ct-nl">Buộc nộp lại số lợi bất hợp pháp</span> <span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span> — theo khoản 11 và khoản 12 Điều 21. Cán bộ xem thêm mục <a href="#tham-quyen">Thẩm quyền xử phạt</a>.</p>
       <p class="search-status" id="fine-status"></p>
       <div class="tbl-wrap">
         <table id="fine-table">
@@ -929,41 +942,41 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
           <tbody>
 <tr data-level="0" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 1<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đi lại trên lãnh thổ Việt Nam mà không mang theo hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam hoặc thẻ ABTC.</td><td class="fine">Cảnh cáo hoặc 300.000 – 500.000 đ</td></tr>
 <tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2a<br><small>Điều 21</small></td><td>Chung</td><td>Không thông báo theo quy định cho cơ quan có thẩm quyền về việc mất hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, thẻ ABTC, giấy tờ XNC khác theo điều ước quốc tế còn giá trị sử dụng.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2b<br><small>Điều 21</small></td><td>Chung</td><td>Khai không đúng sự thật để được cấp, gia hạn, khôi phục giá trị sử dụng hoặc trình báo mất hộ chiếu, giấy thông hành; khai không đúng sự thật để được cấp giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
+<tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2b<br><small>Điều 21</small></td><td>Chung</td><td>Khai không đúng sự thật để được cấp, gia hạn, khôi phục giá trị sử dụng hoặc trình báo mất hộ chiếu, giấy thông hành; khai không đúng sự thật để được cấp giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span></span></td><td class="fine">500.000 – 2.000.000 đ</td></tr>
 <tr data-level="1" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 2c<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đi vào khu vực Nhà nước quy định cần có giấy phép mà không có giấy phép hoặc đi lại quá phạm vi, thời hạn được phép.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
 <tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2d<br><small>Điều 21</small></td><td>Chung</td><td>Không xuất trình giấy tờ XNC khi cơ quan, người có thẩm quyền của Việt Nam yêu cầu; không chấp hành yêu cầu về khám người, phương tiện vận tải, đồ vật, nơi cất giấu tang vật, phương tiện vi phạm hành chính.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
 <tr data-level="1" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 2đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn dưới 16 ngày mà không được cơ quan có thẩm quyền cho phép.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
 <tr data-level="1" data-group="cd" data-scope="Công dân Việt Nam"><td class="ref">Khoản 2e<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng giấy tờ xuất nhập cảnh hết thời hạn sử dụng hoặc không có giấy tờ xuất nhập cảnh để nhập cảnh Việt Nam.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
 <tr data-level="1" data-group="cd" data-scope="Chung"><td class="ref">Khoản 2g<br><small>Điều 21</small></td><td>Chung</td><td>Chiếm đoạt, chiếm giữ trái phép hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác.</td><td class="fine">500.000 – 2.000.000 đ</td></tr>
-<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3a<br><small>Điều 21</small></td><td>Chung</td><td>Hủy hoại, tẩy xóa, sửa chữa làm sai lệch nội dung, hình thức hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3b<br><small>Điều 21</small></td><td>Chung</td><td>Tặng, cho, thuê, cho thuê, cầm cố, nhận cầm cố hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3c<br><small>Điều 21</small></td><td>Chung</td><td>Cho người khác sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, giấy tờ XNC khác hoặc thẻ ABTC để thực hiện hành vi trái quy định của pháp luật.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3d<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác để nhập cảnh, xuất cảnh, quá cảnh, cư trú hoặc để thực hiện hành vi vi phạm pháp luật khác.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3a<br><small>Điều 21</small></td><td>Chung</td><td>Hủy hoại, tẩy xóa, sửa chữa làm sai lệch nội dung, hình thức hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span></span></td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3b<br><small>Điều 21</small></td><td>Chung</td><td>Tặng, cho, thuê, cho thuê, cầm cố, nhận cầm cố hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-nl">Buộc nộp lại số lợi bất hợp pháp</span></span></td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3c<br><small>Điều 21</small></td><td>Chung</td><td>Cho người khác sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, giấy tờ XNC khác hoặc thẻ ABTC để thực hiện hành vi trái quy định của pháp luật.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span></span></td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 3d<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC của người khác để nhập cảnh, xuất cảnh, quá cảnh, cư trú hoặc để thực hiện hành vi vi phạm pháp luật khác.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span></span></td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
 <tr data-level="2" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 3đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài đã được cấp thẻ thường trú mà thay đổi địa chỉ nhưng không khai báo để cấp lại; người nước ngoài nhập cảnh vào khu kinh tế cửa khẩu, khu kinh tế ven biển theo diện miễn thị thực đi đến địa điểm khác của Việt Nam mà không có thị thực Việt Nam.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
 <tr data-level="2" data-group="nn" data-scope="Cơ sở lưu trú Người nước ngoài"><td class="ref">Khoản 3e<br><small>Điều 21</small></td><td>Cơ sở lưu trú / Người nước ngoài</td><td>Cơ sở lưu trú không khai báo tạm trú theo quy định từ 01 đến 03 người nước ngoài hoặc tạo tài khoản bằng thông tin sai sự thật để khai báo tạm trú trên môi trường điện tử; người nước ngoài không xuất trình hộ chiếu/giấy tờ đi lại, giấy tờ cư trú cho cơ sở lưu trú để khai báo tạm trú.</td><td class="fine">3.000.000 – 5.000.000 đ</td></tr>
-<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 4a<br><small>Điều 21</small></td><td>Chung</td><td>Qua lại biên giới quốc gia mà không làm thủ tục xuất cảnh, nhập cảnh theo quy định của pháp luật.</td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
-<tr data-level="2" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 4b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn từ 16 ngày đến dưới 30 ngày mà không được phép.</td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
-<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 5a<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu giả, giấy thông hành giả, giấy tờ có giá trị đi lại quốc tế giả, giấy tờ cấp cho người nước ngoài giả, tem AB giả, giấy tờ XNC khác theo điều ước quốc tế giả, kiểm chứng xuất cảnh, nhập cảnh giả, chứng nhận tạm trú giả hoặc thẻ ABTC giả.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 5b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 30 ngày đến dưới 60 ngày mà không được phép.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Cơ sở lưu trú"><td class="ref">Khoản 5c<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 04 đến 08 người nước ngoài.</td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 6a<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh, hành nghề hoặc có hoạt động khác tại Việt Nam mà không được phép của cơ quan có thẩm quyền của Việt Nam.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 6b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 60 ngày đến dưới 90 ngày mà không được phép.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 6c<br><small>Điều 21</small></td><td>Chung</td><td>Mua, bán hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác theo điều ước quốc tế hoặc thẻ ABTC.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-level="3" data-group="cd" data-scope="Công dân Việt Nam"><td class="ref">Khoản 6d<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng thị thực nước ngoài giả hoặc giấy tờ xác nhận, chứng minh được nước đến cho nhập cảnh giả.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Cơ sở lưu trú"><td class="ref">Khoản 6đ<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 09 người nước ngoài trở lên.</td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Tổ chức Chung"><td class="ref">Khoản 7a<br><small>Điều 21</small></td><td>Tổ chức, cá nhân bảo lãnh</td><td>Làm thủ tục mời, bảo lãnh cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam nhưng không thực hiện đúng trách nhiệm theo quy định hoặc khai không đúng sự thật khi làm thủ tục mời, bảo lãnh.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 7b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh hoạt động không đúng mục đích, chương trình đã đề nghị xin cấp thị thực, thẻ tạm trú hoặc gia hạn tạm trú.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 7c<br><small>Điều 21</small></td><td>Chung</td><td>Giả mạo hồ sơ, giấy tờ để được cấp hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 7d<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 90 ngày đến dưới 180 ngày mà không được phép.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-level="3" data-group="nn" data-scope="Tổ chức"><td class="ref">Khoản 7đ<br><small>Điều 21</small></td><td>Tổ chức, cá nhân</td><td>Sử dụng lao động là người nước ngoài, tổ chức chương trình du lịch cho người nước ngoài hoặc cho người nước ngoài tạm trú khi người nước ngoài cư trú không hợp pháp tại Việt Nam hoặc phát hiện dấu hiệu vi phạm pháp luật về XNC, cư trú mà không thông báo cho cơ quan có thẩm quyền.</td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
-<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 8<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 180 ngày đến dưới 01 năm mà không được phép.</td><td class="fine">25.000.000 – 30.000.000 đ</td></tr>
-<tr data-level="4" data-group="cd" data-scope="Chung"><td class="ref">Khoản 9a<br><small>Điều 21</small></td><td>Chung</td><td>Vào, ở lại đại sứ quán, lãnh sự quán, cơ quan đại diện ngoại giao, cơ quan lãnh sự hoặc trụ sở cơ quan, tổ chức quốc tế đóng tại Việt Nam mà không được phép của cơ quan, tổ chức đó.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài cư trú tại các khu vực cấm người nước ngoài cư trú.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-level="4" data-group="nn" data-scope="Tổ chức"><td class="ref">Khoản 9c<br><small>Điều 21</small></td><td>Chủ / người quản lý / điều khiển phương tiện</td><td>Chủ phương tiện hoặc người quản lý phương tiện hoặc người điều khiển phương tiện vận chuyển người qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-level="4" data-group="cd" data-scope="Chung"><td class="ref">Khoản 9d<br><small>Điều 21</small></td><td>Chung</td><td>Tổ chức, môi giới cho người khác xuất cảnh, nhập cảnh hoặc ở lại Việt Nam trái phép nhưng chưa đến mức truy cứu TNHS; tổ chức, môi giới, giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác ở lại nước ngoài hoặc qua lại biên giới quốc gia trái phép nhưng chưa đến mức truy cứu TNHS; giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác xuất cảnh, nhập cảnh, ở lại Việt Nam trái phép.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài không chấp hành quyết định trục xuất hoặc quyết định buộc xuất cảnh hoặc yêu cầu xuất cảnh của cơ quan chức năng, tiếp tục cư trú tại Việt Nam.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9e<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 01 năm trở lên mà không được phép.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
-<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9g<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định sau đó ở lại Việt Nam nhưng không được cấp giấy tờ có giá trị cư trú tại Việt Nam.</td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="2" data-group="cd" data-scope="Chung"><td class="ref">Khoản 4a<br><small>Điều 21</small></td><td>Chung</td><td>Qua lại biên giới quốc gia mà không làm thủ tục xuất cảnh, nhập cảnh theo quy định của pháp luật.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
+<tr data-level="2" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 4b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài sử dụng chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú ở Việt Nam quá thời hạn từ 16 ngày đến dưới 30 ngày mà không được phép.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">5.000.000 – 10.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 5a<br><small>Điều 21</small></td><td>Chung</td><td>Sử dụng hộ chiếu giả, giấy thông hành giả, giấy tờ có giá trị đi lại quốc tế giả, giấy tờ cấp cho người nước ngoài giả, tem AB giả, giấy tờ XNC khác theo điều ước quốc tế giả, kiểm chứng xuất cảnh, nhập cảnh giả, chứng nhận tạm trú giả hoặc thẻ ABTC giả.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 5b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 30 ngày đến dưới 60 ngày mà không được phép.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Cơ sở lưu trú"><td class="ref">Khoản 5c<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 04 đến 08 người nước ngoài.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">10.000.000 – 15.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 6a<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh, hành nghề hoặc có hoạt động khác tại Việt Nam mà không được phép của cơ quan có thẩm quyền của Việt Nam.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-nl">Buộc nộp lại số lợi bất hợp pháp</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 6b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 60 ngày đến dưới 90 ngày mà không được phép.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 6c<br><small>Điều 21</small></td><td>Chung</td><td>Mua, bán hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác theo điều ước quốc tế hoặc thẻ ABTC.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-nl">Buộc nộp lại số lợi bất hợp pháp</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Công dân Việt Nam"><td class="ref">Khoản 6d<br><small>Điều 21</small></td><td>Công dân Việt Nam</td><td>Công dân Việt Nam sử dụng thị thực nước ngoài giả hoặc giấy tờ xác nhận, chứng minh được nước đến cho nhập cảnh giả.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Cơ sở lưu trú"><td class="ref">Khoản 6đ<br><small>Điều 21</small></td><td>Cơ sở lưu trú</td><td>Cơ sở lưu trú không thực hiện khai báo tạm trú theo quy định từ 09 người nước ngoài trở lên.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">15.000.000 – 20.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Tổ chức Chung"><td class="ref">Khoản 7a<br><small>Điều 21</small></td><td>Tổ chức, cá nhân bảo lãnh</td><td>Làm thủ tục mời, bảo lãnh cho người nước ngoài nhập cảnh, xuất cảnh, cư trú tại Việt Nam nhưng không thực hiện đúng trách nhiệm theo quy định hoặc khai không đúng sự thật khi làm thủ tục mời, bảo lãnh.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 7b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài nhập cảnh hoạt động không đúng mục đích, chương trình đã đề nghị xin cấp thị thực, thẻ tạm trú hoặc gia hạn tạm trú.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="cd" data-scope="Chung"><td class="ref">Khoản 7c<br><small>Điều 21</small></td><td>Chung</td><td>Giả mạo hồ sơ, giấy tờ để được cấp hộ chiếu, giấy thông hành, giấy tờ có giá trị đi lại quốc tế, giấy tờ cấp cho người nước ngoài, tem AB, giấy tờ XNC khác hoặc thẻ ABTC.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 7d<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 90 ngày đến dưới 180 ngày mà không được phép.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="3" data-group="nn" data-scope="Tổ chức"><td class="ref">Khoản 7đ<br><small>Điều 21</small></td><td>Tổ chức, cá nhân</td><td>Sử dụng lao động là người nước ngoài, tổ chức chương trình du lịch cho người nước ngoài hoặc cho người nước ngoài tạm trú khi người nước ngoài cư trú không hợp pháp tại Việt Nam hoặc phát hiện dấu hiệu vi phạm pháp luật về XNC, cư trú mà không thông báo cho cơ quan có thẩm quyền.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">20.000.000 – 25.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 8<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú (chứng nhận tạm trú, gia hạn tạm trú, thẻ tạm trú, không cấp đổi thẻ thường trú) từ 180 ngày đến dưới 01 năm mà không được phép.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">25.000.000 – 30.000.000 đ</td></tr>
+<tr data-level="4" data-group="cd" data-scope="Chung"><td class="ref">Khoản 9a<br><small>Điều 21</small></td><td>Chung</td><td>Vào, ở lại đại sứ quán, lãnh sự quán, cơ quan đại diện ngoại giao, cơ quan lãnh sự hoặc trụ sở cơ quan, tổ chức quốc tế đóng tại Việt Nam mà không được phép của cơ quan, tổ chức đó.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9b<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài cư trú tại các khu vực cấm người nước ngoài cư trú.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Tổ chức"><td class="ref">Khoản 9c<br><small>Điều 21</small></td><td>Chủ / người quản lý / điều khiển phương tiện</td><td>Chủ phương tiện hoặc người quản lý phương tiện hoặc người điều khiển phương tiện vận chuyển người qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định.<span class="chetai"><span class="ct ct-tt">Tịch thu tang vật</span><span class="ct ct-nl">Buộc nộp lại số lợi bất hợp pháp</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="cd" data-scope="Chung"><td class="ref">Khoản 9d<br><small>Điều 21</small></td><td>Chung</td><td>Tổ chức, môi giới cho người khác xuất cảnh, nhập cảnh hoặc ở lại Việt Nam trái phép nhưng chưa đến mức truy cứu TNHS; tổ chức, môi giới, giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác ở lại nước ngoài hoặc qua lại biên giới quốc gia trái phép nhưng chưa đến mức truy cứu TNHS; giúp sức, xúi giục, chứa chấp, che giấu, tạo điều kiện cho người khác xuất cảnh, nhập cảnh, ở lại Việt Nam trái phép.<span class="chetai"><span class="ct ct-nl">Buộc nộp lại số lợi bất hợp pháp</span><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9đ<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài không chấp hành quyết định trục xuất hoặc quyết định buộc xuất cảnh hoặc yêu cầu xuất cảnh của cơ quan chức năng, tiếp tục cư trú tại Việt Nam.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9e<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài quá hạn tạm trú từ 01 năm trở lên mà không được phép.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
+<tr data-level="4" data-group="nn" data-scope="Người nước ngoài"><td class="ref">Khoản 9g<br><small>Điều 21</small></td><td>Người nước ngoài</td><td>Người nước ngoài qua lại biên giới quốc gia không làm thủ tục nhập cảnh theo quy định sau đó ở lại Việt Nam nhưng không được cấp giấy tờ có giá trị cư trú tại Việt Nam.<span class="chetai"><span class="ct ct-tx">Có thể trục xuất nếu là người nước ngoài</span></span></td><td class="fine">30.000.000 – 40.000.000 đ</td></tr>
           </tbody>
         </table>
       </div>
@@ -996,11 +1009,104 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
     </div>
   </section>
 
+  <!-- ============ THẨM QUYỀN XỬ PHẠT ============ -->
+  <section class="section" id="tham-quyen">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="section-no">06</span> Thẩm quyền xử phạt · dành cho cán bộ</p>
+        <h2>Xác định thẩm quyền trước khi ra quyết định</h2>
+        <p class="lead">Phần này dùng như sổ tay cho cán bộ trực tiếp xử lý vụ việc. Trước khi ra quyết định xử phạt, cần trả lời đủ ba câu hỏi: hành vi thuộc khoản, điểm nào; khung tiền phạt tối đa là bao nhiêu; và mức đó có vượt thẩm quyền của chức danh mình hay không.</p>
+      </div>
+
+      <div class="sotay-figs">
+        <div class="panel-dark">
+          <span class="big">40 triệu</span><span class="big-unit">đồng — mức phạt tiền tối đa với cá nhân</span>
+          <p>Trần của lĩnh vực an ninh, trật tự, an toàn xã hội theo <b>Điều 5 Nghị định 282/2025/NĐ-CP</b>. Không chức danh nào phạt quá mức này đối với cá nhân.</p>
+        </div>
+        <div class="panel-dark">
+          <span class="big">80 triệu</span><span class="big-unit">đồng — mức tối đa với tổ chức</span>
+          <p>Tổ chức vi phạm cùng hành vi thì mức phạt <b>gấp 02 lần</b> cá nhân, và thẩm quyền phạt tiền của mỗi chức danh đối với tổ chức cũng <b>gấp 02 lần</b> thẩm quyền đối với cá nhân (khoản 1 Điều 64).</p>
+        </div>
+        <div class="panel-dark">
+          <span class="big">01 năm</span><span class="big-unit">thời hiệu xử phạt</span>
+          <p>Theo <b>Điều 6 Nghị định 282/2025/NĐ-CP</b>. Quá thời hiệu thì không xử phạt, nhưng vẫn có thể áp dụng biện pháp khắc phục hậu quả theo quy định.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-bottom:6px">Ba bước xác định thẩm quyền</h3>
+      <div class="steps">
+        <div class="step"><span class="step-no">1</span><div>
+          <h4>Xác định hành vi và căn cứ</h4>
+          <p>Đối chiếu <a href="#phap-ly">bảng Điều 21</a> để ghi rõ <b>khoản và điểm</b>. Mỗi hành vi có một khung tiền phạt riêng; ghi nhận luôn hình thức xử phạt bổ sung và biện pháp khắc phục hậu quả kèm theo hành vi đó — các thẻ màu trong bảng đã đánh dấu sẵn.</p></div></div>
+        <div class="step"><span class="step-no">2</span><div>
+          <h4>Lấy mức tối đa của khung tiền phạt</h4>
+          <p>Thẩm quyền phạt tiền được xác định theo <b>mức tối đa của khung tiền phạt</b> quy định cho hành vi đó, không phải theo mức tiền dự kiến phạt. Ví dụ hành vi thuộc khung 30 – 40 triệu đồng thì lấy mốc <b>40 triệu</b> để đối chiếu thẩm quyền. Với tổ chức, nhân đôi cả khung lẫn thẩm quyền.</p></div></div>
+        <div class="step"><span class="step-no">3</span><div>
+          <h4>Đối chiếu thẩm quyền rồi quyết định</h4>
+          <p>Nếu mức tối đa của khung <b>vượt thẩm quyền</b> của chức danh mình thì lập biên bản và <b>chuyển hồ sơ</b> đến người có thẩm quyền. Nếu hành vi đã đến mức truy cứu trách nhiệm hình sự thì <b>không xử phạt hành chính</b> mà chuyển hồ sơ xử lý theo <a href="#hinh-su">Bộ luật Hình sự</a>.</p></div></div>
+      </div>
+
+      <h3 style="margin:34px 0 6px">Lực lượng có thẩm quyền trong lĩnh vực xuất nhập cảnh</h3>
+      <p class="lead" style="margin-bottom:22px">Chương III Nghị định 282/2025/NĐ-CP quy định thẩm quyền của từng chức danh. Dưới đây là các lực lượng thường gặp khi xử lý vụ việc về xuất cảnh, nhập cảnh.</p>
+      <div class="grid g3">
+        <div class="card">
+          <span class="icon-box"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <h3>Công an nhân dân</h3>
+          <p><b>Điều 55</b> — gồm 09 nhóm chức danh:</p>
+          <ul>
+            <li>Chiến sĩ Công an nhân dân đang thi hành công vụ;</li>
+            <li>Trưởng đồn Công an, Trưởng trạm, Đội trưởng;</li>
+            <li><b>Trưởng Công an cấp xã</b>;</li>
+            <li>Trưởng Công an cửa khẩu Cảng hàng không quốc tế, Trưởng phòng Công an cấp tỉnh;</li>
+            <li><b>Trưởng phòng Quản lý xuất nhập cảnh Công an cấp tỉnh</b> — chức danh được quy định riêng một khoản;</li>
+            <li><b>Giám đốc Công an cấp tỉnh</b>;</li>
+            <li><b>Cục trưởng Cục Quản lý xuất nhập cảnh</b>.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="icon-box gold"><svg class="icon"><use href="#i-home"/></svg></span>
+          <h3>Chủ tịch Ủy ban nhân dân</h3>
+          <p><b>Điều 54</b> — theo mô hình chính quyền hai cấp hiện hành:</p>
+          <ul>
+            <li>Chủ tịch Ủy ban nhân dân <b>cấp xã</b>;</li>
+            <li>Chủ tịch Ủy ban nhân dân <b>cấp tỉnh</b>.</li>
+          </ul>
+          <p>Không còn thẩm quyền của cấp huyện do đã kết thúc hoạt động của đơn vị hành chính cấp huyện.</p>
+        </div>
+        <div class="card">
+          <span class="icon-box"><svg class="icon"><use href="#i-pin"/></svg></span>
+          <h3>Các lực lượng khác</h3>
+          <ul>
+            <li><b>Bộ đội Biên phòng</b> — Điều 56, từ chiến sĩ đến Chỉ huy trưởng Ban Chỉ huy Bộ đội Biên phòng;</li>
+            <li><b>Cảnh sát biển</b> — Điều 57, từ cảnh sát viên đến Tư lệnh Cảnh sát biển Việt Nam;</li>
+            <li><b>Hải quan</b> — Điều 58, từ công chức đến Cục trưởng Cục Hải quan;</li>
+            <li><b>Cơ quan đại diện ngoại giao, cơ quan lãnh sự</b> Việt Nam ở nước ngoài — Điều 63, người đứng đầu cơ quan.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note green">
+        <h3><svg class="icon sm"><use href="#i-check"/></svg> Mốc thẩm quyền đã đối chiếu được</h3>
+        <p><b>Trưởng Công an cấp xã</b> — phạt cảnh cáo; phạt tiền <b>đến 20.000.000 đồng</b> đối với hành vi vi phạm trong lĩnh vực an ninh, trật tự, an toàn xã hội; tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động có thời hạn; <b>tịch thu tang vật, phương tiện vi phạm hành chính</b>; áp dụng biện pháp khắc phục hậu quả theo khoản 3 Điều 3 của Nghị định.</p>
+        <p>Đây là thay đổi đáng chú ý so với Nghị định 144/2021/NĐ-CP: thẩm quyền phạt tiền của cấp xã tăng mạnh, phù hợp với mô hình chính quyền hai cấp.</p>
+      </div>
+
+      <div class="note red">
+        <h3><svg class="icon sm"><use href="#i-alert"/></svg> Phải đối chiếu văn bản gốc trước khi ra quyết định</h3>
+        <p>Trang này <b>chưa đưa mức phạt tiền tối đa của từng chức danh còn lại</b> vì chưa đối chiếu được toàn văn Chương III Nghị định 282/2025/NĐ-CP từ nguồn chính thức. Mức thẩm quyền sai dẫn đến quyết định xử phạt không đúng thẩm quyền và bị hủy.</p>
+        <p>Trước khi ra quyết định, cán bộ <b>đối chiếu trực tiếp Chương III (Điều 54 – Điều 64)</b> của Nghị định trên Công báo hoặc Cơ sở dữ liệu quốc gia về pháp luật. Khi đã có số liệu chính thức, đề nghị bổ sung vào bảng này để dùng chung trong đơn vị.</p>
+        <p class="small-source">Tra cứu toàn văn: <a href="https://vbpl.vn" target="_blank" rel="noopener noreferrer">vbpl.vn</a> · <a href="https://congbao.chinhphu.vn" target="_blank" rel="noopener noreferrer">congbao.chinhphu.vn</a></p>
+      </div>
+
+      <p class="small-source">Căn cứ: Nghị định số 282/2025/NĐ-CP (Điều 5 mức phạt tối đa, Điều 6 thời hiệu, Điều 21 hành vi và chế tài, Chương III thẩm quyền); Luật Xử lý vi phạm hành chính năm 2012, sửa đổi, bổ sung năm 2020 và các văn bản sửa đổi hiện hành.</p>
+    </div>
+  </section>
+
   <!-- ============ 07 · HÌNH SỰ ============ -->
   <section class="section section-white" id="hinh-su">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow"><span class="section-no">06</span> Trách nhiệm hình sự</p>
+        <p class="eyebrow"><span class="section-no">07</span> Trách nhiệm hình sự</p>
         <h2>Trách nhiệm hình sự về xuất cảnh, nhập cảnh trái phép</h2>
         <p class="lead">Các tội danh trực tiếp liên quan đến xuất cảnh, nhập cảnh của công dân Việt Nam tập trung tại Điều 347 — 350, cùng tội làm giả, sử dụng giấy tờ giả (Điều 341) và các tội danh khác thường bị lợi dụng qua đường xuất nhập cảnh trái phép.</p>
       </div>
@@ -1087,7 +1193,7 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
   <section class="section" id="canh-bao">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow"><span class="section-no">07</span> Phòng ngừa rủi ro</p>
+        <p class="eyebrow"><span class="section-no">08</span> Phòng ngừa rủi ro</p>
         <h2>Cảnh báo: đừng để một chuyến đi trái phép đánh đổi tương lai</h2>
         <p class="lead">Phần lớn vụ việc xuất cảnh trái phép của công dân bắt đầu từ một lời mời trên mạng xã hội. Nhận diện sớm các dấu hiệu sau để bảo vệ bản thân và người thân.</p>
       </div>
@@ -1116,7 +1222,7 @@ tr[data-level="4"] td:first-child{border-left-color:var(--lv4)} tr[data-level="4
   <section class="section section-white" id="lien-ket">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow"><span class="section-no">08</span> Liên kết hữu ích</p>
+        <p class="eyebrow"><span class="section-no">09</span> Liên kết hữu ích</p>
         <h2>Dịch vụ công, trang thông tin và bài viết liên quan</h2>
         <p class="lead">Các địa chỉ chính thống để nộp hồ sơ trực tuyến, tra cứu văn bản gốc và tìm hiểu thêm. Đề nghị chỉ truy cập các cổng có tên miền <b>.gov.vn</b>; không cung cấp thông tin cá nhân, hộ chiếu, tài khoản VNeID trên các trang trung gian, quảng cáo “làm hộ chiếu nhanh”.</p>
       </div>
